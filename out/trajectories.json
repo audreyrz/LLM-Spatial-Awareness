@@ -1,0 +1,680 @@
+{
+  "Werner": [
+    {
+      "event": 2,
+      "place": "apartment #5",
+      "role": "destination",
+      "span": [
+        935,
+        946
+      ],
+      "motion": "walks up"
+    }
+  ],
+  "Frederick’s mother": [
+    {
+      "event": 3,
+      "place": "side room",
+      "role": "destination",
+      "span": [
+        1101,
+        1146
+      ],
+      "motion": "swishes out"
+    }
+  ],
+  "unknown": [
+    {
+      "event": 5,
+      "place": "drawing room",
+      "role": "destination",
+      "span": [
+        1755,
+        1799
+      ],
+      "motion": "leads"
+    },
+    {
+      "event": 14,
+      "place": "staircase",
+      "role": "source",
+      "span": [
+        7216,
+        7244
+      ],
+      "motion": "up"
+    },
+    {
+      "event": 14,
+      "place": "apartment #5",
+      "role": "destination",
+      "span": [
+        7216,
+        7244
+      ],
+      "motion": "up"
+    },
+    {
+      "event": 19,
+      "place": "outer gate",
+      "role": "source",
+      "span": [
+        8195,
+        8248
+      ],
+      "motion": "close"
+    },
+    {
+      "event": 19,
+      "place": "front door",
+      "role": "destination",
+      "span": [
+        8195,
+        8248
+      ],
+      "motion": "close"
+    }
+  ],
+  "Franny": [
+    {
+      "event": 6,
+      "place": "swinging door",
+      "role": "via",
+      "span": [
+        2689,
+        2747
+      ],
+      "motion": "walks"
+    },
+    {
+      "event": 6,
+      "place": "kitchen",
+      "role": "destination",
+      "span": [
+        2689,
+        2747
+      ],
+      "motion": "walks"
+    },
+    {
+      "event": 7,
+      "place": "swinging door",
+      "role": "via",
+      "span": [
+        4832,
+        4883
+      ],
+      "motion": "walks"
+    },
+    {
+      "event": 7,
+      "place": "kitchen",
+      "role": "destination",
+      "span": [
+        4832,
+        4883
+      ],
+      "motion": "walks"
+    }
+  ],
+  "Frederick": [
+    {
+      "event": 8,
+      "place": "schulpforta",
+      "role": "destination",
+      "span": [
+        4972,
+        4995
+      ],
+      "motion": "leaving"
+    },
+    {
+      "event": 9,
+      "place": "schulpforta",
+      "role": "destination",
+      "span": [
+        5036,
+        5060
+      ],
+      "motion": "send"
+    }
+  ],
+  "Marie-Laure": [
+    {
+      "event": 10,
+      "place": "apartment #5",
+      "role": "destination",
+      "span": [
+        6602,
+        6621
+      ],
+      "motion": "lets herself in"
+    },
+    {
+      "event": 11,
+      "place": "side room",
+      "role": "source",
+      "span": [
+        6881,
+        6904
+      ],
+      "motion": "scrambles"
+    },
+    {
+      "event": 11,
+      "place": "apartment building",
+      "role": "destination",
+      "span": [
+        6881,
+        6904
+      ],
+      "motion": "scrambles"
+    },
+    {
+      "event": 15,
+      "place": "staircase",
+      "role": "source",
+      "span": [
+        7332,
+        7363
+      ],
+      "motion": "paces"
+    },
+    {
+      "event": 15,
+      "place": "staircase",
+      "role": "destination",
+      "span": [
+        7332,
+        7363
+      ],
+      "motion": "paces"
+    },
+    {
+      "event": 16,
+      "place": "telephone",
+      "role": "destination",
+      "span": [
+        7464,
+        7489
+      ],
+      "motion": "scurries"
+    },
+    {
+      "event": 28,
+      "place": "fourth floor",
+      "role": "source",
+      "span": [
+        10423,
+        10478
+      ],
+      "motion": "up"
+    },
+    {
+      "event": 28,
+      "place": "sixth-floor landing",
+      "role": "destination",
+      "span": [
+        10423,
+        10478
+      ],
+      "motion": "up"
+    },
+    {
+      "event": 29,
+      "place": "sixth-floor landing",
+      "role": "source",
+      "span": [
+        10638,
+        10661
+      ],
+      "motion": "up"
+    },
+    {
+      "event": 29,
+      "place": "fourth floor",
+      "role": "destination",
+      "span": [
+        10638,
+        10661
+      ],
+      "motion": "up"
+    },
+    {
+      "event": 30,
+      "place": "sixth-floor landing",
+      "role": "source",
+      "span": [
+        10683,
+        10692
+      ],
+      "motion": "up"
+    },
+    {
+      "event": 30,
+      "place": "fifth floor",
+      "role": "destination",
+      "span": [
+        10683,
+        10692
+      ],
+      "motion": "up"
+    },
+    {
+      "event": 31,
+      "place": "sixth-floor landing",
+      "role": "source",
+      "span": [
+        10694,
+        10732
+      ],
+      "motion": "pause"
+    },
+    {
+      "event": 31,
+      "place": "sixth-floor landing",
+      "role": "destination",
+      "span": [
+        10694,
+        10732
+      ],
+      "motion": "pause"
+    }
+  ],
+  "Etienne": [
+    {
+      "event": 12,
+      "place": "bedside",
+      "role": "source",
+      "span": [
+        7099,
+        7124
+      ],
+      "motion": "scurries"
+    },
+    {
+      "event": 12,
+      "place": "telephone",
+      "role": "destination",
+      "span": [
+        7099,
+        7124
+      ],
+      "motion": "scurries"
+    }
+  ],
+  "doctor": [
+    {
+      "event": 17,
+      "place": "bedside",
+      "role": "source",
+      "span": [
+        7634,
+        7659
+      ],
+      "motion": "out"
+    },
+    {
+      "event": 17,
+      "place": "street",
+      "role": "destination",
+      "span": [
+        7634,
+        7659
+      ],
+      "motion": "out"
+    },
+    {
+      "event": 18,
+      "place": "bedside",
+      "role": "source",
+      "span": [
+        7758,
+        7789
+      ],
+      "motion": "carries"
+    },
+    {
+      "event": 18,
+      "place": "street",
+      "role": "destination",
+      "span": [
+        7758,
+        7789
+      ],
+      "motion": "carries"
+    }
+  ],
+  "he": [
+    {
+      "event": 20,
+      "place": "outer gate",
+      "role": "via",
+      "span": [
+        8356,
+        8401
+      ],
+      "motion": "out"
+    },
+    {
+      "event": 20,
+      "place": "front door",
+      "role": "destination",
+      "span": [
+        8356,
+        8401
+      ],
+      "motion": "out"
+    },
+    {
+      "event": 25,
+      "place": "kitchen",
+      "role": "source",
+      "span": [
+        10007,
+        10027
+      ],
+      "motion": "exits"
+    },
+    {
+      "event": 25,
+      "place": "foyer",
+      "role": "destination",
+      "span": [
+        10007,
+        10027
+      ],
+      "motion": "exits"
+    },
+    {
+      "event": 26,
+      "place": "kitchen",
+      "role": "source",
+      "span": [
+        10029,
+        10050
+      ],
+      "motion": "returns"
+    },
+    {
+      "event": 26,
+      "place": "foyer",
+      "role": "destination",
+      "span": [
+        10029,
+        10050
+      ],
+      "motion": "returns"
+    },
+    {
+      "event": 35,
+      "place": "third-floor landing",
+      "role": "source",
+      "span": [
+        11454,
+        11469
+      ],
+      "motion": "climbing"
+    },
+    {
+      "event": 35,
+      "place": "sixth-floor landing",
+      "role": "destination",
+      "span": [
+        11454,
+        11469
+      ],
+      "motion": "climbing"
+    },
+    {
+      "event": 47,
+      "place": "fifth floor",
+      "role": "source",
+      "span": [
+        15963,
+        15982
+      ],
+      "motion": "climbs"
+    },
+    {
+      "event": 47,
+      "place": "sixth-floor landing",
+      "role": "destination",
+      "span": [
+        15963,
+        15982
+      ],
+      "motion": "climbs"
+    },
+    {
+      "event": 48,
+      "place": "sixth-floor landing",
+      "role": "source",
+      "span": [
+        16152,
+        16171
+      ],
+      "motion": "back"
+    },
+    {
+      "event": 48,
+      "place": "sixth-floor landing",
+      "role": "destination",
+      "span": [
+        16152,
+        16171
+      ],
+      "motion": "back"
+    }
+  ],
+  "German sergeant major": [
+    {
+      "event": 33,
+      "place": "sixth-floor landing",
+      "role": "source",
+      "span": [
+        10864,
+        10878
+      ],
+      "motion": "up"
+    },
+    {
+      "event": 33,
+      "place": "third-floor landing",
+      "role": "destination",
+      "span": [
+        10864,
+        10878
+      ],
+      "motion": "up"
+    }
+  ],
+  "she": [
+    {
+      "event": 36,
+      "place": "wardrobe",
+      "role": "source",
+      "span": [
+        12082,
+        12114
+      ],
+      "motion": "squeezes"
+    },
+    {
+      "event": 36,
+      "place": "tiny space where the ladder rises to the garret",
+      "role": "destination",
+      "span": [
+        12082,
+        12114
+      ],
+      "motion": "squeezes"
+    }
+  ],
+  "Bernd": [
+    {
+      "event": 37,
+      "place": "kitchen",
+      "role": "source",
+      "span": [
+        13023,
+        13043
+      ],
+      "motion": "cross"
+    },
+    {
+      "event": 37,
+      "place": "kitchen",
+      "role": "destination",
+      "span": [
+        13023,
+        13043
+      ],
+      "motion": "cross"
+    },
+    {
+      "event": 39,
+      "place": "kitchen",
+      "role": "source",
+      "span": [
+        13409,
+        13441
+      ],
+      "motion": "go"
+    },
+    {
+      "event": 39,
+      "place": "street",
+      "role": "destination",
+      "span": [
+        13409,
+        13441
+      ],
+      "motion": "go"
+    },
+    {
+      "event": 40,
+      "place": "kitchen",
+      "role": "source",
+      "span": [
+        13599,
+        13605
+      ],
+      "motion": "left"
+    },
+    {
+      "event": 40,
+      "place": "street",
+      "role": "destination",
+      "span": [
+        13599,
+        13605
+      ],
+      "motion": "left"
+    },
+    {
+      "event": 41,
+      "place": "fourth floor",
+      "role": "source",
+      "span": [
+        13621,
+        13663
+      ],
+      "motion": "went down"
+    },
+    {
+      "event": 41,
+      "place": "street",
+      "role": "destination",
+      "span": [
+        13621,
+        13663
+      ],
+      "motion": "went down"
+    },
+    {
+      "event": 42,
+      "place": "train station",
+      "role": "destination",
+      "span": [
+        13741,
+        13787
+      ],
+      "motion": "ride"
+    },
+    {
+      "event": 43,
+      "place": "street",
+      "role": "source",
+      "span": [
+        13789,
+        13799
+      ],
+      "motion": "left"
+    },
+    {
+      "event": 43,
+      "place": "street",
+      "role": "destination",
+      "span": [
+        13789,
+        13799
+      ],
+      "motion": "left"
+    }
+  ],
+  "Volkheimer": [
+    {
+      "event": 44,
+      "place": "corner",
+      "role": "source",
+      "span": [
+        14080,
+        14119
+      ],
+      "motion": "carries"
+    },
+    {
+      "event": 44,
+      "place": "corner",
+      "role": "destination",
+      "span": [
+        14080,
+        14119
+      ],
+      "motion": "carries"
+    }
+  ],
+  "Von Rumpel": [
+    {
+      "event": 45,
+      "place": "sixth-floor bedroom",
+      "role": "destination",
+      "span": [
+        15236,
+        15270
+      ],
+      "motion": "limps"
+    },
+    {
+      "event": 46,
+      "place": "sixth-floor bedroom",
+      "role": "source",
+      "span": [
+        15692,
+        15721
+      ],
+      "motion": "climbs"
+    },
+    {
+      "event": 46,
+      "place": "fifth floor",
+      "role": "destination",
+      "span": [
+        15692,
+        15721
+      ],
+      "motion": "climbs"
+    }
+  ]
+}

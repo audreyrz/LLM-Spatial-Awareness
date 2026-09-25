@@ -1,0 +1,590 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d11" for="edge" attr.name="repeat_count" attr.type="long"/>
+<key id="d10" for="edge" attr.name="span_text" attr.type="string"/>
+<key id="d9" for="edge" attr.name="conf" attr.type="double"/>
+<key id="d8" for="edge" attr.name="direction" attr.type="string"/>
+<key id="d7" for="edge" attr.name="motion" attr.type="string"/>
+<key id="d6" for="edge" attr.name="gap_chars" attr.type="long"/>
+<key id="d5" for="edge" attr.name="actor" attr.type="string"/>
+<key id="d4" for="edge" attr.name="span" attr.type="string"/>
+<key id="d3" for="edge" attr.name="kind" attr.type="string"/>
+<key id="d2" for="node" attr.name="hedged" attr.type="boolean"/>
+<key id="d1" for="node" attr.name="mentions" attr.type="string"/>
+<key id="d0" for="node" attr.name="first_seen" attr.type="long"/>
+<graph edgedefault="directed"><node id="apartment #5">
+  <data key="d0">935</data>
+  <data key="d1">[[935, 946], [1101, 1146], [2689, 2747], [4832, 4883], [6602, 6621], [6881, 6904], [7099, 7124], [7216, 7244], [7634, 7659], [7758, 7789], [8195, 8248], [10007, 10027], [10423, 10478], [15236, 15270], [15692, 15721], [15963, 15982]]</data>
+  <data key="d2">False</data>
+</node>
+<node id="apartment building">
+  <data key="d0">935</data>
+  <data key="d1">[[935, 946], [1755, 1799], [6602, 6621], [6881, 6904], [7216, 7244], [7332, 7363], [8356, 8401], [10029, 10050], [10638, 10661], [10683, 10692], [10694, 10732], [10864, 10878], [11454, 11469], [13409, 13441], [13599, 13605], [13621, 13663]]</data>
+  <data key="d2">False</data>
+</node>
+<node id="side room">
+  <data key="d0">1101</data>
+  <data key="d1">[[1101, 1146], [6881, 6904]]</data>
+  <data key="d2">False</data>
+</node>
+<node id="drawing room">
+  <data key="d0">1755</data>
+  <data key="d1">[[1755, 1799]]</data>
+  <data key="d2">False</data>
+</node>
+<node id="swinging door">
+  <data key="d0">2689</data>
+  <data key="d1">[[2689, 2747], [4832, 4883]]</data>
+  <data key="d2">False</data>
+</node>
+<node id="kitchen">
+  <data key="d0">2689</data>
+  <data key="d1">[[2689, 2747], [4832, 4883], [10007, 10027], [10029, 10050], [13023, 13043], [13023, 13043], [13409, 13441], [13599, 13605]]</data>
+  <data key="d2">False</data>
+</node>
+<node id="schulpforta">
+  <data key="d0">4972</data>
+  <data key="d1">[[4972, 4995], [5036, 5060]]</data>
+  <data key="d2">False</data>
+</node>
+<node id="bedside">
+  <data key="d0">7099</data>
+  <data key="d1">[[7099, 7124], [7634, 7659], [7758, 7789]]</data>
+  <data key="d2">False</data>
+</node>
+<node id="telephone">
+  <data key="d0">7099</data>
+  <data key="d1">[[7099, 7124], [7464, 7489]]</data>
+  <data key="d2">False</data>
+</node>
+<node id="staircase">
+  <data key="d0">7216</data>
+  <data key="d1">[[7216, 7244], [7332, 7363], [7332, 7363], [7464, 7489]]</data>
+  <data key="d2">False</data>
+</node>
+<node id="street">
+  <data key="d0">7634</data>
+  <data key="d1">[[7634, 7659], [7758, 7789], [13409, 13441], [13599, 13605], [13621, 13663], [13789, 13799], [13789, 13799]]</data>
+  <data key="d2">False</data>
+</node>
+<node id="outer gate">
+  <data key="d0">8195</data>
+  <data key="d1">[[8195, 8248], [8356, 8401]]</data>
+  <data key="d2">False</data>
+</node>
+<node id="front door">
+  <data key="d0">8195</data>
+  <data key="d1">[[8195, 8248], [8356, 8401]]</data>
+  <data key="d2">False</data>
+</node>
+<node id="foyer">
+  <data key="d0">10007</data>
+  <data key="d1">[[10007, 10027], [10029, 10050]]</data>
+  <data key="d2">False</data>
+</node>
+<node id="fourth floor">
+  <data key="d0">10423</data>
+  <data key="d1">[[10423, 10478], [10638, 10661], [13621, 13663]]</data>
+  <data key="d2">False</data>
+</node>
+<node id="sixth-floor landing">
+  <data key="d0">10423</data>
+  <data key="d1">[[10423, 10478], [10638, 10661], [10683, 10692], [10694, 10732], [10694, 10732], [10864, 10878], [11454, 11469], [15963, 15982], [16152, 16171], [16152, 16171]]</data>
+  <data key="d2">False</data>
+</node>
+<node id="fifth floor">
+  <data key="d0">10683</data>
+  <data key="d1">[[10683, 10692], [15692, 15721], [15963, 15982]]</data>
+  <data key="d2">False</data>
+</node>
+<node id="third-floor landing">
+  <data key="d0">10864</data>
+  <data key="d1">[[10864, 10878], [11454, 11469]]</data>
+  <data key="d2">False</data>
+</node>
+<node id="wardrobe">
+  <data key="d0">12082</data>
+  <data key="d1">[[12082, 12114]]</data>
+  <data key="d2">False</data>
+</node>
+<node id="tiny space where the ladder rises to the garret">
+  <data key="d0">12082</data>
+  <data key="d1">[[12082, 12114]]</data>
+  <data key="d2">False</data>
+</node>
+<node id="henri’s room">
+  <data key="d0">12082</data>
+  <data key="d1">[[12082, 12114]]</data>
+  <data key="d2">False</data>
+</node>
+<node id="train station">
+  <data key="d0">13741</data>
+  <data key="d1">[[13741, 13787]]</data>
+  <data key="d2">False</data>
+</node>
+<node id="corner">
+  <data key="d0">14080</data>
+  <data key="d1">[[14080, 14119], [14080, 14119]]</data>
+  <data key="d2">False</data>
+</node>
+<node id="sixth-floor bedroom">
+  <data key="d0">15236</data>
+  <data key="d1">[[15236, 15270], [15692, 15721]]</data>
+  <data key="d2">False</data>
+</node>
+<edge source="apartment #5" target="apartment building" id="0">
+  <data key="d3">contained_in</data>
+  <data key="d4">[935, 946]</data>
+</edge>
+<edge source="apartment #5" target="apartment building" id="1">
+  <data key="d3">contained_in</data>
+  <data key="d4">[6602, 6621]</data>
+</edge>
+<edge source="apartment #5" target="apartment building" id="2">
+  <data key="d3">contained_in</data>
+  <data key="d4">[7216, 7244]</data>
+</edge>
+<edge source="apartment #5" target="outer gate" id="0">
+  <data key="d3">sequential</data>
+  <data key="d5">unknown</data>
+  <data key="d6">951</data>
+  <data key="d7">close</data>
+  <data key="d8">in</data>
+  <data key="d9">1.0</data>
+  <data key="d4">[8195, 8248]</data>
+</edge>
+<edge source="apartment building" target="apartment #5" id="0">
+  <data key="d3">contained_in</data>
+  <data key="d4">[6881, 6904]</data>
+</edge>
+<edge source="side room" target="apartment #5" id="0">
+  <data key="d3">contained_in</data>
+  <data key="d4">[1101, 1146]</data>
+</edge>
+<edge source="side room" target="apartment building" id="0">
+  <data key="d3">traversal</data>
+  <data key="d5">Marie-Laure</data>
+  <data key="d7">scrambles</data>
+  <data key="d8">up</data>
+  <data key="d9">1.0</data>
+  <data key="d4">[6881, 6904]</data>
+  <data key="d10">She scrambles upstairs,</data>
+</edge>
+<edge source="drawing room" target="apartment building" id="0">
+  <data key="d3">contained_in</data>
+  <data key="d4">[1755, 1799]</data>
+</edge>
+<edge source="swinging door" target="kitchen" id="0">
+  <data key="d3">traversal</data>
+  <data key="d5">Franny</data>
+  <data key="d7">walks</data>
+  <data key="d8">in</data>
+  <data key="d9">1.0</data>
+  <data key="d4">[2689, 2747]</data>
+  <data key="d10">walks through a swinging door into what must be a kitchen.</data>
+</edge>
+<edge source="swinging door" target="kitchen" id="1">
+  <data key="d3">traversal</data>
+  <data key="d5">Franny</data>
+  <data key="d7">walks</data>
+  <data key="d8">in</data>
+  <data key="d9">1.0</data>
+  <data key="d4">[4832, 4883]</data>
+  <data key="d10">Franny has already retreated back into the kitchen.</data>
+</edge>
+<edge source="kitchen" target="apartment #5" id="0">
+  <data key="d3">contained_in</data>
+  <data key="d4">[2689, 2747]</data>
+</edge>
+<edge source="kitchen" target="apartment #5" id="1">
+  <data key="d3">contained_in</data>
+  <data key="d4">[4832, 4883]</data>
+</edge>
+<edge source="kitchen" target="foyer" id="0">
+  <data key="d3">traversal</data>
+  <data key="d5">he</data>
+  <data key="d7">exits</data>
+  <data key="d8">out</data>
+  <data key="d9">1.0</data>
+  <data key="d4">[10007, 10027]</data>
+  <data key="d10">He exits the kitchen</data>
+</edge>
+<edge source="kitchen" target="foyer" id="1">
+  <data key="d3">traversal</data>
+  <data key="d5">he</data>
+  <data key="d7">returns</data>
+  <data key="d8">in</data>
+  <data key="d9">1.0</data>
+  <data key="d4">[10029, 10050]</data>
+  <data key="d10">Returns to the foyer.</data>
+</edge>
+<edge source="kitchen" target="kitchen" id="0">
+  <data key="d3">traversal</data>
+  <data key="d5">Bernd</data>
+  <data key="d7">cross</data>
+  <data key="d8">in</data>
+  <data key="d9">1.0</data>
+  <data key="d4">[13023, 13043]</data>
+  <data key="d10">I visited my father.</data>
+</edge>
+<edge source="kitchen" target="street" id="0">
+  <data key="d3">traversal</data>
+  <data key="d5">Bernd</data>
+  <data key="d7">go</data>
+  <data key="d8">down</data>
+  <data key="d9">1.0</data>
+  <data key="d4">[13409, 13441]</data>
+  <data key="d10">You can go off with your friends</data>
+</edge>
+<edge source="kitchen" target="street" id="1">
+  <data key="d3">traversal</data>
+  <data key="d5">Bernd</data>
+  <data key="d7">left</data>
+  <data key="d8">out</data>
+  <data key="d9">1.0</data>
+  <data key="d4">[13599, 13605]</data>
+  <data key="d10">I left</data>
+</edge>
+<edge source="bedside" target="telephone" id="0">
+  <data key="d3">traversal</data>
+  <data key="d5">Etienne</data>
+  <data key="d7">scurries</data>
+  <data key="d8">forward</data>
+  <data key="d9">1.0</data>
+  <data key="d4">[7099, 7124]</data>
+  <data key="d10">scurries to the telephone</data>
+</edge>
+<edge source="bedside" target="street" id="0">
+  <data key="d3">traversal</data>
+  <data key="d5">doctor</data>
+  <data key="d7">out</data>
+  <data key="d8">out</data>
+  <data key="d9">1.0</data>
+  <data key="d4">[7634, 7659]</data>
+  <data key="d10">doctor returns with a man</data>
+</edge>
+<edge source="bedside" target="street" id="1">
+  <data key="d3">traversal</data>
+  <data key="d5">doctor</data>
+  <data key="d7">carries</data>
+  <data key="d8">out</data>
+  <data key="d9">1.0</data>
+  <data key="d4">[7758, 7789]</data>
+  <data key="d10">carries her out into the street</data>
+</edge>
+<edge source="telephone" target="apartment #5" id="0">
+  <data key="d3">contained_in</data>
+  <data key="d4">[7099, 7124]</data>
+</edge>
+<edge source="telephone" target="staircase" id="0">
+  <data key="d3">contained_in</data>
+  <data key="d4">[7464, 7489]</data>
+</edge>
+<edge source="staircase" target="apartment #5" id="0">
+  <data key="d3">traversal</data>
+  <data key="d5">unknown</data>
+  <data key="d7">up</data>
+  <data key="d8">up</data>
+  <data key="d9">1.0</data>
+  <data key="d4">[7216, 7244]</data>
+  <data key="d10">the kitchen fills with women</data>
+</edge>
+<edge source="staircase" target="apartment building" id="0">
+  <data key="d3">contained_in</data>
+  <data key="d4">[7332, 7363]</data>
+</edge>
+<edge source="staircase" target="staircase" id="0">
+  <data key="d11">2</data>
+  <data key="d3">traversal</data>
+  <data key="d5">Marie-Laure</data>
+  <data key="d7">paces</data>
+  <data key="d8">up</data>
+  <data key="d9">1.0</data>
+  <data key="d4">[7332, 7363]</data>
+  <data key="d10">Marie-Laure paces the staircase</data>
+</edge>
+<edge source="street" target="apartment #5" id="0">
+  <data key="d3">contained_in</data>
+  <data key="d4">[7634, 7659]</data>
+</edge>
+<edge source="street" target="apartment #5" id="1">
+  <data key="d3">contained_in</data>
+  <data key="d4">[7758, 7789]</data>
+</edge>
+<edge source="street" target="bedside" id="0">
+  <data key="d3">sequential</data>
+  <data key="d5">doctor</data>
+  <data key="d6">99</data>
+  <data key="d7">carries</data>
+  <data key="d8">out</data>
+  <data key="d9">1.0</data>
+  <data key="d4">[7758, 7789]</data>
+</edge>
+<edge source="street" target="apartment building" id="0">
+  <data key="d3">contained_in</data>
+  <data key="d4">[13409, 13441]</data>
+</edge>
+<edge source="street" target="apartment building" id="1">
+  <data key="d3">contained_in</data>
+  <data key="d4">[13599, 13605]</data>
+</edge>
+<edge source="street" target="apartment building" id="2">
+  <data key="d3">contained_in</data>
+  <data key="d4">[13621, 13663]</data>
+</edge>
+<edge source="street" target="kitchen" id="0">
+  <data key="d3">sequential</data>
+  <data key="d5">Bernd</data>
+  <data key="d6">158</data>
+  <data key="d7">left</data>
+  <data key="d8">out</data>
+  <data key="d9">1.0</data>
+  <data key="d4">[13599, 13605]</data>
+</edge>
+<edge source="street" target="fourth floor" id="0">
+  <data key="d3">sequential</data>
+  <data key="d5">Bernd</data>
+  <data key="d6">16</data>
+  <data key="d7">went down</data>
+  <data key="d8">down</data>
+  <data key="d9">1.0</data>
+  <data key="d4">[13621, 13663]</data>
+</edge>
+<edge source="street" target="train station" id="0">
+  <data key="d3">sequential</data>
+  <data key="d5">Bernd</data>
+  <data key="d6">78</data>
+  <data key="d7">ride</data>
+  <data key="d9">0.8</data>
+  <data key="d4">[13741, 13787]</data>
+</edge>
+<edge source="street" target="street" id="0">
+  <data key="d3">traversal</data>
+  <data key="d5">Bernd</data>
+  <data key="d7">left</data>
+  <data key="d9">1.0</data>
+  <data key="d4">[13789, 13799]</data>
+  <data key="d10">But I left</data>
+</edge>
+<edge source="outer gate" target="front door" id="0">
+  <data key="d3">traversal</data>
+  <data key="d5">unknown</data>
+  <data key="d7">close</data>
+  <data key="d8">in</data>
+  <data key="d9">1.0</data>
+  <data key="d4">[8195, 8248]</data>
+  <data key="d10">The outer gate sighs shut, then the front door closes</data>
+</edge>
+<edge source="outer gate" target="front door" id="1">
+  <data key="d3">traversal</data>
+  <data key="d5">he</data>
+  <data key="d7">out</data>
+  <data key="d8">in</data>
+  <data key="d9">1.0</data>
+  <data key="d4">[8356, 8401]</data>
+  <data key="d10">he closed the gate first, then shut the door.</data>
+</edge>
+<edge source="front door" target="apartment #5" id="0">
+  <data key="d3">contained_in</data>
+  <data key="d4">[8195, 8248]</data>
+</edge>
+<edge source="front door" target="apartment building" id="0">
+  <data key="d3">contained_in</data>
+  <data key="d4">[8356, 8401]</data>
+</edge>
+<edge source="foyer" target="apartment #5" id="0">
+  <data key="d3">contained_in</data>
+  <data key="d4">[10007, 10027]</data>
+</edge>
+<edge source="foyer" target="apartment building" id="0">
+  <data key="d3">contained_in</data>
+  <data key="d4">[10029, 10050]</data>
+</edge>
+<edge source="foyer" target="kitchen" id="0">
+  <data key="d3">sequential</data>
+  <data key="d5">he</data>
+  <data key="d6">2</data>
+  <data key="d7">returns</data>
+  <data key="d8">in</data>
+  <data key="d9">1.0</data>
+  <data key="d4">[10029, 10050]</data>
+</edge>
+<edge source="foyer" target="third-floor landing" id="0">
+  <data key="d3">sequential</data>
+  <data key="d5">he</data>
+  <data key="d6">1404</data>
+  <data key="d7">climbing</data>
+  <data key="d8">up</data>
+  <data key="d9">0.9</data>
+  <data key="d4">[11454, 11469]</data>
+</edge>
+<edge source="fourth floor" target="sixth-floor landing" id="0">
+  <data key="d3">traversal</data>
+  <data key="d5">Marie-Laure</data>
+  <data key="d7">up</data>
+  <data key="d8">up</data>
+  <data key="d9">1.0</data>
+  <data key="d4">[10423, 10478]</data>
+  <data key="d10">Marie-Laure takes each step as deliberately as she can.</data>
+</edge>
+<edge source="fourth floor" target="sixth-floor landing" id="1">
+  <data key="d3">sequential</data>
+  <data key="d5">Marie-Laure</data>
+  <data key="d6">22</data>
+  <data key="d7">up</data>
+  <data key="d8">up</data>
+  <data key="d9">1.0</data>
+  <data key="d4">[10683, 10692]</data>
+</edge>
+<edge source="fourth floor" target="apartment building" id="0">
+  <data key="d3">contained_in</data>
+  <data key="d4">[10638, 10661]</data>
+</edge>
+<edge source="fourth floor" target="street" id="0">
+  <data key="d3">traversal</data>
+  <data key="d5">Bernd</data>
+  <data key="d7">went down</data>
+  <data key="d8">down</data>
+  <data key="d9">1.0</data>
+  <data key="d4">[13621, 13663]</data>
+  <data key="d10">I went down the stairs and into the street</data>
+</edge>
+<edge source="sixth-floor landing" target="apartment #5" id="0">
+  <data key="d3">contained_in</data>
+  <data key="d4">[10423, 10478]</data>
+</edge>
+<edge source="sixth-floor landing" target="apartment #5" id="1">
+  <data key="d3">contained_in</data>
+  <data key="d4">[15963, 15982]</data>
+</edge>
+<edge source="sixth-floor landing" target="fourth floor" id="0">
+  <data key="d3">traversal</data>
+  <data key="d5">Marie-Laure</data>
+  <data key="d7">up</data>
+  <data key="d8">up</data>
+  <data key="d9">1.0</data>
+  <data key="d4">[10638, 10661]</data>
+  <data key="d10">Up to the fourth floor.</data>
+</edge>
+<edge source="sixth-floor landing" target="fifth floor" id="0">
+  <data key="d3">traversal</data>
+  <data key="d5">Marie-Laure</data>
+  <data key="d7">up</data>
+  <data key="d8">up</data>
+  <data key="d9">1.0</data>
+  <data key="d4">[10683, 10692]</data>
+  <data key="d10">The fifth</data>
+</edge>
+<edge source="sixth-floor landing" target="apartment building" id="0">
+  <data key="d3">contained_in</data>
+  <data key="d4">[10694, 10732]</data>
+</edge>
+<edge source="sixth-floor landing" target="apartment building" id="1">
+  <data key="d3">contained_in</data>
+  <data key="d4">[11454, 11469]</data>
+</edge>
+<edge source="sixth-floor landing" target="sixth-floor landing" id="0">
+  <data key="d3">traversal</data>
+  <data key="d5">Marie-Laure</data>
+  <data key="d7">pause</data>
+  <data key="d9">1.0</data>
+  <data key="d4">[10694, 10732]</data>
+  <data key="d10">On the sixth-floor landing, she pauses</data>
+</edge>
+<edge source="sixth-floor landing" target="sixth-floor landing" id="1">
+  <data key="d11">1</data>
+  <data key="d3">traversal</data>
+  <data key="d5">he</data>
+  <data key="d7">back</data>
+  <data key="d9">1.0</data>
+  <data key="d4">[16152, 16171]</data>
+  <data key="d10">Back to the landing</data>
+</edge>
+<edge source="sixth-floor landing" target="third-floor landing" id="0">
+  <data key="d3">traversal</data>
+  <data key="d5">German sergeant major</data>
+  <data key="d7">up</data>
+  <data key="d8">up</data>
+  <data key="d9">1.0</data>
+  <data key="d4">[10864, 10878]</data>
+  <data key="d10">Then on again.</data>
+</edge>
+<edge source="fifth floor" target="apartment building" id="0">
+  <data key="d3">contained_in</data>
+  <data key="d4">[10683, 10692]</data>
+</edge>
+<edge source="fifth floor" target="sixth-floor landing" id="0">
+  <data key="d3">sequential</data>
+  <data key="d5">Marie-Laure</data>
+  <data key="d6">2</data>
+  <data key="d7">pause</data>
+  <data key="d9">1.0</data>
+  <data key="d4">[10694, 10732]</data>
+</edge>
+<edge source="fifth floor" target="sixth-floor landing" id="1">
+  <data key="d3">traversal</data>
+  <data key="d5">he</data>
+  <data key="d7">climbs</data>
+  <data key="d8">up</data>
+  <data key="d9">1.0</data>
+  <data key="d4">[15963, 15982]</data>
+  <data key="d10">To the sixth floor.</data>
+</edge>
+<edge source="fifth floor" target="apartment #5" id="0">
+  <data key="d3">contained_in</data>
+  <data key="d4">[15692, 15721]</data>
+</edge>
+<edge source="third-floor landing" target="apartment building" id="0">
+  <data key="d3">contained_in</data>
+  <data key="d4">[10864, 10878]</data>
+</edge>
+<edge source="third-floor landing" target="sixth-floor landing" id="0">
+  <data key="d3">traversal</data>
+  <data key="d5">he</data>
+  <data key="d7">climbing</data>
+  <data key="d8">up</data>
+  <data key="d9">0.9</data>
+  <data key="d4">[11454, 11469]</data>
+  <data key="d10">Climbing again.</data>
+</edge>
+<edge source="wardrobe" target="tiny space where the ladder rises to the garret" id="0">
+  <data key="d3">traversal</data>
+  <data key="d5">she</data>
+  <data key="d7">squeezes</data>
+  <data key="d9">1.0</data>
+  <data key="d4">[12082, 12114]</data>
+  <data key="d10">She squeezes into the tiny space</data>
+</edge>
+<edge source="tiny space where the ladder rises to the garret" target="henri’s room" id="0">
+  <data key="d3">contained_in</data>
+  <data key="d4">[12082, 12114]</data>
+</edge>
+<edge source="train station" target="street" id="0">
+  <data key="d3">sequential</data>
+  <data key="d5">Bernd</data>
+  <data key="d6">2</data>
+  <data key="d7">left</data>
+  <data key="d9">1.0</data>
+  <data key="d4">[13789, 13799]</data>
+</edge>
+<edge source="corner" target="corner" id="0">
+  <data key="d3">traversal</data>
+  <data key="d5">Volkheimer</data>
+  <data key="d7">carries</data>
+  <data key="d9">1.0</data>
+  <data key="d4">[14080, 14119]</data>
+  <data key="d10">Volkheimer carrying Bernd into a corner</data>
+</edge>
+<edge source="sixth-floor bedroom" target="apartment #5" id="0">
+  <data key="d3">contained_in</data>
+  <data key="d4">[15236, 15270]</data>
+</edge>
+<edge source="sixth-floor bedroom" target="fifth floor" id="0">
+  <data key="d3">traversal</data>
+  <data key="d5">Von Rumpel</data>
+  <data key="d7">climbs</data>
+  <data key="d8">up</data>
+  <data key="d9">1.0</data>
+  <data key="d4">[15692, 15721]</data>
+  <data key="d10">He climbs to the fifth floor,</data>
+</edge>
+</graph></graphml>

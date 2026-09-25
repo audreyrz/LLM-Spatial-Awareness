@@ -1,0 +1,1433 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {},
+  "nodes": [
+    {
+      "first_seen": 935,
+      "mentions": [
+        [
+          935,
+          946
+        ],
+        [
+          1101,
+          1146
+        ],
+        [
+          2689,
+          2747
+        ],
+        [
+          4832,
+          4883
+        ],
+        [
+          6602,
+          6621
+        ],
+        [
+          6881,
+          6904
+        ],
+        [
+          7099,
+          7124
+        ],
+        [
+          7216,
+          7244
+        ],
+        [
+          7634,
+          7659
+        ],
+        [
+          7758,
+          7789
+        ],
+        [
+          8195,
+          8248
+        ],
+        [
+          10007,
+          10027
+        ],
+        [
+          10423,
+          10478
+        ],
+        [
+          15236,
+          15270
+        ],
+        [
+          15692,
+          15721
+        ],
+        [
+          15963,
+          15982
+        ]
+      ],
+      "hedged": false,
+      "id": "apartment #5"
+    },
+    {
+      "first_seen": 935,
+      "mentions": [
+        [
+          935,
+          946
+        ],
+        [
+          1755,
+          1799
+        ],
+        [
+          6602,
+          6621
+        ],
+        [
+          6881,
+          6904
+        ],
+        [
+          7216,
+          7244
+        ],
+        [
+          7332,
+          7363
+        ],
+        [
+          8356,
+          8401
+        ],
+        [
+          10029,
+          10050
+        ],
+        [
+          10638,
+          10661
+        ],
+        [
+          10683,
+          10692
+        ],
+        [
+          10694,
+          10732
+        ],
+        [
+          10864,
+          10878
+        ],
+        [
+          11454,
+          11469
+        ],
+        [
+          13409,
+          13441
+        ],
+        [
+          13599,
+          13605
+        ],
+        [
+          13621,
+          13663
+        ]
+      ],
+      "hedged": false,
+      "id": "apartment building"
+    },
+    {
+      "first_seen": 1101,
+      "mentions": [
+        [
+          1101,
+          1146
+        ],
+        [
+          6881,
+          6904
+        ]
+      ],
+      "hedged": false,
+      "id": "side room"
+    },
+    {
+      "first_seen": 1755,
+      "mentions": [
+        [
+          1755,
+          1799
+        ]
+      ],
+      "hedged": false,
+      "id": "drawing room"
+    },
+    {
+      "first_seen": 2689,
+      "mentions": [
+        [
+          2689,
+          2747
+        ],
+        [
+          4832,
+          4883
+        ]
+      ],
+      "hedged": false,
+      "id": "swinging door"
+    },
+    {
+      "first_seen": 2689,
+      "mentions": [
+        [
+          2689,
+          2747
+        ],
+        [
+          4832,
+          4883
+        ],
+        [
+          10007,
+          10027
+        ],
+        [
+          10029,
+          10050
+        ],
+        [
+          13023,
+          13043
+        ],
+        [
+          13023,
+          13043
+        ],
+        [
+          13409,
+          13441
+        ],
+        [
+          13599,
+          13605
+        ]
+      ],
+      "hedged": false,
+      "id": "kitchen"
+    },
+    {
+      "first_seen": 4972,
+      "mentions": [
+        [
+          4972,
+          4995
+        ],
+        [
+          5036,
+          5060
+        ]
+      ],
+      "hedged": false,
+      "id": "schulpforta"
+    },
+    {
+      "first_seen": 7099,
+      "mentions": [
+        [
+          7099,
+          7124
+        ],
+        [
+          7634,
+          7659
+        ],
+        [
+          7758,
+          7789
+        ]
+      ],
+      "hedged": false,
+      "id": "bedside"
+    },
+    {
+      "first_seen": 7099,
+      "mentions": [
+        [
+          7099,
+          7124
+        ],
+        [
+          7464,
+          7489
+        ]
+      ],
+      "hedged": false,
+      "id": "telephone"
+    },
+    {
+      "first_seen": 7216,
+      "mentions": [
+        [
+          7216,
+          7244
+        ],
+        [
+          7332,
+          7363
+        ],
+        [
+          7332,
+          7363
+        ],
+        [
+          7464,
+          7489
+        ]
+      ],
+      "hedged": false,
+      "id": "staircase"
+    },
+    {
+      "first_seen": 7634,
+      "mentions": [
+        [
+          7634,
+          7659
+        ],
+        [
+          7758,
+          7789
+        ],
+        [
+          13409,
+          13441
+        ],
+        [
+          13599,
+          13605
+        ],
+        [
+          13621,
+          13663
+        ],
+        [
+          13789,
+          13799
+        ],
+        [
+          13789,
+          13799
+        ]
+      ],
+      "hedged": false,
+      "id": "street"
+    },
+    {
+      "first_seen": 8195,
+      "mentions": [
+        [
+          8195,
+          8248
+        ],
+        [
+          8356,
+          8401
+        ]
+      ],
+      "hedged": false,
+      "id": "outer gate"
+    },
+    {
+      "first_seen": 8195,
+      "mentions": [
+        [
+          8195,
+          8248
+        ],
+        [
+          8356,
+          8401
+        ]
+      ],
+      "hedged": false,
+      "id": "front door"
+    },
+    {
+      "first_seen": 10007,
+      "mentions": [
+        [
+          10007,
+          10027
+        ],
+        [
+          10029,
+          10050
+        ]
+      ],
+      "hedged": false,
+      "id": "foyer"
+    },
+    {
+      "first_seen": 10423,
+      "mentions": [
+        [
+          10423,
+          10478
+        ],
+        [
+          10638,
+          10661
+        ],
+        [
+          13621,
+          13663
+        ]
+      ],
+      "hedged": false,
+      "id": "fourth floor"
+    },
+    {
+      "first_seen": 10423,
+      "mentions": [
+        [
+          10423,
+          10478
+        ],
+        [
+          10638,
+          10661
+        ],
+        [
+          10683,
+          10692
+        ],
+        [
+          10694,
+          10732
+        ],
+        [
+          10694,
+          10732
+        ],
+        [
+          10864,
+          10878
+        ],
+        [
+          11454,
+          11469
+        ],
+        [
+          15963,
+          15982
+        ],
+        [
+          16152,
+          16171
+        ],
+        [
+          16152,
+          16171
+        ]
+      ],
+      "hedged": false,
+      "id": "sixth-floor landing"
+    },
+    {
+      "first_seen": 10683,
+      "mentions": [
+        [
+          10683,
+          10692
+        ],
+        [
+          15692,
+          15721
+        ],
+        [
+          15963,
+          15982
+        ]
+      ],
+      "hedged": false,
+      "id": "fifth floor"
+    },
+    {
+      "first_seen": 10864,
+      "mentions": [
+        [
+          10864,
+          10878
+        ],
+        [
+          11454,
+          11469
+        ]
+      ],
+      "hedged": false,
+      "id": "third-floor landing"
+    },
+    {
+      "first_seen": 12082,
+      "mentions": [
+        [
+          12082,
+          12114
+        ]
+      ],
+      "hedged": false,
+      "id": "wardrobe"
+    },
+    {
+      "first_seen": 12082,
+      "mentions": [
+        [
+          12082,
+          12114
+        ]
+      ],
+      "hedged": false,
+      "id": "tiny space where the ladder rises to the garret"
+    },
+    {
+      "first_seen": 12082,
+      "mentions": [
+        [
+          12082,
+          12114
+        ]
+      ],
+      "hedged": false,
+      "id": "henri’s room"
+    },
+    {
+      "first_seen": 13741,
+      "mentions": [
+        [
+          13741,
+          13787
+        ]
+      ],
+      "hedged": false,
+      "id": "train station"
+    },
+    {
+      "first_seen": 14080,
+      "mentions": [
+        [
+          14080,
+          14119
+        ],
+        [
+          14080,
+          14119
+        ]
+      ],
+      "hedged": false,
+      "id": "corner"
+    },
+    {
+      "first_seen": 15236,
+      "mentions": [
+        [
+          15236,
+          15270
+        ],
+        [
+          15692,
+          15721
+        ]
+      ],
+      "hedged": false,
+      "id": "sixth-floor bedroom"
+    }
+  ],
+  "edges": [
+    {
+      "kind": "contained_in",
+      "span": [
+        935,
+        946
+      ],
+      "source": "apartment #5",
+      "target": "apartment building",
+      "key": 0
+    },
+    {
+      "kind": "contained_in",
+      "span": [
+        6602,
+        6621
+      ],
+      "source": "apartment #5",
+      "target": "apartment building",
+      "key": 1
+    },
+    {
+      "kind": "contained_in",
+      "span": [
+        7216,
+        7244
+      ],
+      "source": "apartment #5",
+      "target": "apartment building",
+      "key": 2
+    },
+    {
+      "kind": "sequential",
+      "actor": "unknown",
+      "gap_chars": 951,
+      "motion": "close",
+      "direction": "in",
+      "conf": 1.0,
+      "span": [
+        8195,
+        8248
+      ],
+      "source": "apartment #5",
+      "target": "outer gate",
+      "key": 0
+    },
+    {
+      "kind": "contained_in",
+      "span": [
+        6881,
+        6904
+      ],
+      "source": "apartment building",
+      "target": "apartment #5",
+      "key": 0
+    },
+    {
+      "kind": "contained_in",
+      "span": [
+        1101,
+        1146
+      ],
+      "source": "side room",
+      "target": "apartment #5",
+      "key": 0
+    },
+    {
+      "kind": "traversal",
+      "actor": "Marie-Laure",
+      "motion": "scrambles",
+      "direction": "up",
+      "conf": 1.0,
+      "span": [
+        6881,
+        6904
+      ],
+      "span_text": "She scrambles upstairs,",
+      "source": "side room",
+      "target": "apartment building",
+      "key": 0
+    },
+    {
+      "kind": "contained_in",
+      "span": [
+        1755,
+        1799
+      ],
+      "source": "drawing room",
+      "target": "apartment building",
+      "key": 0
+    },
+    {
+      "kind": "traversal",
+      "actor": "Franny",
+      "motion": "walks",
+      "direction": "in",
+      "conf": 1.0,
+      "span": [
+        2689,
+        2747
+      ],
+      "span_text": "walks through a swinging door into what must be a kitchen.",
+      "source": "swinging door",
+      "target": "kitchen",
+      "key": 0
+    },
+    {
+      "kind": "traversal",
+      "actor": "Franny",
+      "motion": "walks",
+      "direction": "in",
+      "conf": 1.0,
+      "span": [
+        4832,
+        4883
+      ],
+      "span_text": "Franny has already retreated back into the kitchen.",
+      "source": "swinging door",
+      "target": "kitchen",
+      "key": 1
+    },
+    {
+      "kind": "contained_in",
+      "span": [
+        2689,
+        2747
+      ],
+      "source": "kitchen",
+      "target": "apartment #5",
+      "key": 0
+    },
+    {
+      "kind": "contained_in",
+      "span": [
+        4832,
+        4883
+      ],
+      "source": "kitchen",
+      "target": "apartment #5",
+      "key": 1
+    },
+    {
+      "kind": "traversal",
+      "actor": "he",
+      "motion": "exits",
+      "direction": "out",
+      "conf": 1.0,
+      "span": [
+        10007,
+        10027
+      ],
+      "span_text": "He exits the kitchen",
+      "source": "kitchen",
+      "target": "foyer",
+      "key": 0
+    },
+    {
+      "kind": "traversal",
+      "actor": "he",
+      "motion": "returns",
+      "direction": "in",
+      "conf": 1.0,
+      "span": [
+        10029,
+        10050
+      ],
+      "span_text": "Returns to the foyer.",
+      "source": "kitchen",
+      "target": "foyer",
+      "key": 1
+    },
+    {
+      "repeat_count": null,
+      "kind": "traversal",
+      "actor": "Bernd",
+      "motion": "cross",
+      "direction": "in",
+      "conf": 1.0,
+      "span": [
+        13023,
+        13043
+      ],
+      "span_text": "I visited my father.",
+      "source": "kitchen",
+      "target": "kitchen",
+      "key": 0
+    },
+    {
+      "kind": "traversal",
+      "actor": "Bernd",
+      "motion": "go",
+      "direction": "down",
+      "conf": 1.0,
+      "span": [
+        13409,
+        13441
+      ],
+      "span_text": "You can go off with your friends",
+      "source": "kitchen",
+      "target": "street",
+      "key": 0
+    },
+    {
+      "kind": "traversal",
+      "actor": "Bernd",
+      "motion": "left",
+      "direction": "out",
+      "conf": 1.0,
+      "span": [
+        13599,
+        13605
+      ],
+      "span_text": "I left",
+      "source": "kitchen",
+      "target": "street",
+      "key": 1
+    },
+    {
+      "kind": "traversal",
+      "actor": "Etienne",
+      "motion": "scurries",
+      "direction": "forward",
+      "conf": 1.0,
+      "span": [
+        7099,
+        7124
+      ],
+      "span_text": "scurries to the telephone",
+      "source": "bedside",
+      "target": "telephone",
+      "key": 0
+    },
+    {
+      "kind": "traversal",
+      "actor": "doctor",
+      "motion": "out",
+      "direction": "out",
+      "conf": 1.0,
+      "span": [
+        7634,
+        7659
+      ],
+      "span_text": "doctor returns with a man",
+      "source": "bedside",
+      "target": "street",
+      "key": 0
+    },
+    {
+      "kind": "traversal",
+      "actor": "doctor",
+      "motion": "carries",
+      "direction": "out",
+      "conf": 1.0,
+      "span": [
+        7758,
+        7789
+      ],
+      "span_text": "carries her out into the street",
+      "source": "bedside",
+      "target": "street",
+      "key": 1
+    },
+    {
+      "kind": "contained_in",
+      "span": [
+        7099,
+        7124
+      ],
+      "source": "telephone",
+      "target": "apartment #5",
+      "key": 0
+    },
+    {
+      "kind": "contained_in",
+      "span": [
+        7464,
+        7489
+      ],
+      "source": "telephone",
+      "target": "staircase",
+      "key": 0
+    },
+    {
+      "kind": "traversal",
+      "actor": "unknown",
+      "motion": "up",
+      "direction": "up",
+      "conf": 1.0,
+      "span": [
+        7216,
+        7244
+      ],
+      "span_text": "the kitchen fills with women",
+      "source": "staircase",
+      "target": "apartment #5",
+      "key": 0
+    },
+    {
+      "kind": "contained_in",
+      "span": [
+        7332,
+        7363
+      ],
+      "source": "staircase",
+      "target": "apartment building",
+      "key": 0
+    },
+    {
+      "repeat_count": 2,
+      "kind": "traversal",
+      "actor": "Marie-Laure",
+      "motion": "paces",
+      "direction": "up",
+      "conf": 1.0,
+      "span": [
+        7332,
+        7363
+      ],
+      "span_text": "Marie-Laure paces the staircase",
+      "source": "staircase",
+      "target": "staircase",
+      "key": 0
+    },
+    {
+      "kind": "contained_in",
+      "span": [
+        7634,
+        7659
+      ],
+      "source": "street",
+      "target": "apartment #5",
+      "key": 0
+    },
+    {
+      "kind": "contained_in",
+      "span": [
+        7758,
+        7789
+      ],
+      "source": "street",
+      "target": "apartment #5",
+      "key": 1
+    },
+    {
+      "kind": "sequential",
+      "actor": "doctor",
+      "gap_chars": 99,
+      "motion": "carries",
+      "direction": "out",
+      "conf": 1.0,
+      "span": [
+        7758,
+        7789
+      ],
+      "source": "street",
+      "target": "bedside",
+      "key": 0
+    },
+    {
+      "kind": "contained_in",
+      "span": [
+        13409,
+        13441
+      ],
+      "source": "street",
+      "target": "apartment building",
+      "key": 0
+    },
+    {
+      "kind": "contained_in",
+      "span": [
+        13599,
+        13605
+      ],
+      "source": "street",
+      "target": "apartment building",
+      "key": 1
+    },
+    {
+      "kind": "contained_in",
+      "span": [
+        13621,
+        13663
+      ],
+      "source": "street",
+      "target": "apartment building",
+      "key": 2
+    },
+    {
+      "kind": "sequential",
+      "actor": "Bernd",
+      "gap_chars": 158,
+      "motion": "left",
+      "direction": "out",
+      "conf": 1.0,
+      "span": [
+        13599,
+        13605
+      ],
+      "source": "street",
+      "target": "kitchen",
+      "key": 0
+    },
+    {
+      "kind": "sequential",
+      "actor": "Bernd",
+      "gap_chars": 16,
+      "motion": "went down",
+      "direction": "down",
+      "conf": 1.0,
+      "span": [
+        13621,
+        13663
+      ],
+      "source": "street",
+      "target": "fourth floor",
+      "key": 0
+    },
+    {
+      "kind": "sequential",
+      "actor": "Bernd",
+      "gap_chars": 78,
+      "motion": "ride",
+      "direction": null,
+      "conf": 0.8,
+      "span": [
+        13741,
+        13787
+      ],
+      "source": "street",
+      "target": "train station",
+      "key": 0
+    },
+    {
+      "repeat_count": null,
+      "kind": "traversal",
+      "actor": "Bernd",
+      "motion": "left",
+      "direction": null,
+      "conf": 1.0,
+      "span": [
+        13789,
+        13799
+      ],
+      "span_text": "But I left",
+      "source": "street",
+      "target": "street",
+      "key": 0
+    },
+    {
+      "kind": "traversal",
+      "actor": "unknown",
+      "motion": "close",
+      "direction": "in",
+      "conf": 1.0,
+      "span": [
+        8195,
+        8248
+      ],
+      "span_text": "The outer gate sighs shut, then the front door closes",
+      "source": "outer gate",
+      "target": "front door",
+      "key": 0
+    },
+    {
+      "kind": "traversal",
+      "actor": "he",
+      "motion": "out",
+      "direction": "in",
+      "conf": 1.0,
+      "span": [
+        8356,
+        8401
+      ],
+      "span_text": "he closed the gate first, then shut the door.",
+      "source": "outer gate",
+      "target": "front door",
+      "key": 1
+    },
+    {
+      "kind": "contained_in",
+      "span": [
+        8195,
+        8248
+      ],
+      "source": "front door",
+      "target": "apartment #5",
+      "key": 0
+    },
+    {
+      "kind": "contained_in",
+      "span": [
+        8356,
+        8401
+      ],
+      "source": "front door",
+      "target": "apartment building",
+      "key": 0
+    },
+    {
+      "kind": "contained_in",
+      "span": [
+        10007,
+        10027
+      ],
+      "source": "foyer",
+      "target": "apartment #5",
+      "key": 0
+    },
+    {
+      "kind": "contained_in",
+      "span": [
+        10029,
+        10050
+      ],
+      "source": "foyer",
+      "target": "apartment building",
+      "key": 0
+    },
+    {
+      "kind": "sequential",
+      "actor": "he",
+      "gap_chars": 2,
+      "motion": "returns",
+      "direction": "in",
+      "conf": 1.0,
+      "span": [
+        10029,
+        10050
+      ],
+      "source": "foyer",
+      "target": "kitchen",
+      "key": 0
+    },
+    {
+      "kind": "sequential",
+      "actor": "he",
+      "gap_chars": 1404,
+      "motion": "climbing",
+      "direction": "up",
+      "conf": 0.9,
+      "span": [
+        11454,
+        11469
+      ],
+      "source": "foyer",
+      "target": "third-floor landing",
+      "key": 0
+    },
+    {
+      "kind": "traversal",
+      "actor": "Marie-Laure",
+      "motion": "up",
+      "direction": "up",
+      "conf": 1.0,
+      "span": [
+        10423,
+        10478
+      ],
+      "span_text": "Marie-Laure takes each step as deliberately as she can.",
+      "source": "fourth floor",
+      "target": "sixth-floor landing",
+      "key": 0
+    },
+    {
+      "kind": "sequential",
+      "actor": "Marie-Laure",
+      "gap_chars": 22,
+      "motion": "up",
+      "direction": "up",
+      "conf": 1.0,
+      "span": [
+        10683,
+        10692
+      ],
+      "source": "fourth floor",
+      "target": "sixth-floor landing",
+      "key": 1
+    },
+    {
+      "kind": "contained_in",
+      "span": [
+        10638,
+        10661
+      ],
+      "source": "fourth floor",
+      "target": "apartment building",
+      "key": 0
+    },
+    {
+      "kind": "traversal",
+      "actor": "Bernd",
+      "motion": "went down",
+      "direction": "down",
+      "conf": 1.0,
+      "span": [
+        13621,
+        13663
+      ],
+      "span_text": "I went down the stairs and into the street",
+      "source": "fourth floor",
+      "target": "street",
+      "key": 0
+    },
+    {
+      "kind": "contained_in",
+      "span": [
+        10423,
+        10478
+      ],
+      "source": "sixth-floor landing",
+      "target": "apartment #5",
+      "key": 0
+    },
+    {
+      "kind": "contained_in",
+      "span": [
+        15963,
+        15982
+      ],
+      "source": "sixth-floor landing",
+      "target": "apartment #5",
+      "key": 1
+    },
+    {
+      "kind": "traversal",
+      "actor": "Marie-Laure",
+      "motion": "up",
+      "direction": "up",
+      "conf": 1.0,
+      "span": [
+        10638,
+        10661
+      ],
+      "span_text": "Up to the fourth floor.",
+      "source": "sixth-floor landing",
+      "target": "fourth floor",
+      "key": 0
+    },
+    {
+      "kind": "traversal",
+      "actor": "Marie-Laure",
+      "motion": "up",
+      "direction": "up",
+      "conf": 1.0,
+      "span": [
+        10683,
+        10692
+      ],
+      "span_text": "The fifth",
+      "source": "sixth-floor landing",
+      "target": "fifth floor",
+      "key": 0
+    },
+    {
+      "kind": "contained_in",
+      "span": [
+        10694,
+        10732
+      ],
+      "source": "sixth-floor landing",
+      "target": "apartment building",
+      "key": 0
+    },
+    {
+      "kind": "contained_in",
+      "span": [
+        11454,
+        11469
+      ],
+      "source": "sixth-floor landing",
+      "target": "apartment building",
+      "key": 1
+    },
+    {
+      "repeat_count": null,
+      "kind": "traversal",
+      "actor": "Marie-Laure",
+      "motion": "pause",
+      "direction": null,
+      "conf": 1.0,
+      "span": [
+        10694,
+        10732
+      ],
+      "span_text": "On the sixth-floor landing, she pauses",
+      "source": "sixth-floor landing",
+      "target": "sixth-floor landing",
+      "key": 0
+    },
+    {
+      "repeat_count": 1,
+      "kind": "traversal",
+      "actor": "he",
+      "motion": "back",
+      "direction": null,
+      "conf": 1.0,
+      "span": [
+        16152,
+        16171
+      ],
+      "span_text": "Back to the landing",
+      "source": "sixth-floor landing",
+      "target": "sixth-floor landing",
+      "key": 1
+    },
+    {
+      "kind": "traversal",
+      "actor": "German sergeant major",
+      "motion": "up",
+      "direction": "up",
+      "conf": 1.0,
+      "span": [
+        10864,
+        10878
+      ],
+      "span_text": "Then on again.",
+      "source": "sixth-floor landing",
+      "target": "third-floor landing",
+      "key": 0
+    },
+    {
+      "kind": "contained_in",
+      "span": [
+        10683,
+        10692
+      ],
+      "source": "fifth floor",
+      "target": "apartment building",
+      "key": 0
+    },
+    {
+      "kind": "sequential",
+      "actor": "Marie-Laure",
+      "gap_chars": 2,
+      "motion": "pause",
+      "direction": null,
+      "conf": 1.0,
+      "span": [
+        10694,
+        10732
+      ],
+      "source": "fifth floor",
+      "target": "sixth-floor landing",
+      "key": 0
+    },
+    {
+      "kind": "traversal",
+      "actor": "he",
+      "motion": "climbs",
+      "direction": "up",
+      "conf": 1.0,
+      "span": [
+        15963,
+        15982
+      ],
+      "span_text": "To the sixth floor.",
+      "source": "fifth floor",
+      "target": "sixth-floor landing",
+      "key": 1
+    },
+    {
+      "kind": "contained_in",
+      "span": [
+        15692,
+        15721
+      ],
+      "source": "fifth floor",
+      "target": "apartment #5",
+      "key": 0
+    },
+    {
+      "kind": "contained_in",
+      "span": [
+        10864,
+        10878
+      ],
+      "source": "third-floor landing",
+      "target": "apartment building",
+      "key": 0
+    },
+    {
+      "kind": "traversal",
+      "actor": "he",
+      "motion": "climbing",
+      "direction": "up",
+      "conf": 0.9,
+      "span": [
+        11454,
+        11469
+      ],
+      "span_text": "Climbing again.",
+      "source": "third-floor landing",
+      "target": "sixth-floor landing",
+      "key": 0
+    },
+    {
+      "kind": "traversal",
+      "actor": "she",
+      "motion": "squeezes",
+      "direction": null,
+      "conf": 1.0,
+      "span": [
+        12082,
+        12114
+      ],
+      "span_text": "She squeezes into the tiny space",
+      "source": "wardrobe",
+      "target": "tiny space where the ladder rises to the garret",
+      "key": 0
+    },
+    {
+      "kind": "contained_in",
+      "span": [
+        12082,
+        12114
+      ],
+      "source": "tiny space where the ladder rises to the garret",
+      "target": "henri’s room",
+      "key": 0
+    },
+    {
+      "kind": "sequential",
+      "actor": "Bernd",
+      "gap_chars": 2,
+      "motion": "left",
+      "direction": null,
+      "conf": 1.0,
+      "span": [
+        13789,
+        13799
+      ],
+      "source": "train station",
+      "target": "street",
+      "key": 0
+    },
+    {
+      "repeat_count": null,
+      "kind": "traversal",
+      "actor": "Volkheimer",
+      "motion": "carries",
+      "direction": null,
+      "conf": 1.0,
+      "span": [
+        14080,
+        14119
+      ],
+      "span_text": "Volkheimer carrying Bernd into a corner",
+      "source": "corner",
+      "target": "corner",
+      "key": 0
+    },
+    {
+      "kind": "contained_in",
+      "span": [
+        15236,
+        15270
+      ],
+      "source": "sixth-floor bedroom",
+      "target": "apartment #5",
+      "key": 0
+    },
+    {
+      "kind": "traversal",
+      "actor": "Von Rumpel",
+      "motion": "climbs",
+      "direction": "up",
+      "conf": 1.0,
+      "span": [
+        15692,
+        15721
+      ],
+      "span_text": "He climbs to the fifth floor,",
+      "source": "sixth-floor bedroom",
+      "target": "fifth floor",
+      "key": 0
+    }
+  ]
+}
