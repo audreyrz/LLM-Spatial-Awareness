@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d10" for="edge" attr.name="text" attr.type="string"/>
+<key id="d9" for="edge" attr.name="span" attr.type="string"/>
+<key id="d8" for="edge" attr.name="distance_unit" attr.type="string"/>
+<key id="d7" for="edge" attr.name="scale_uncertainty" attr.type="long"/>
+<key id="d6" for="edge" attr.name="scale" attr.type="string"/>
+<key id="d5" for="edge" attr.name="tense" attr.type="string"/>
+<key id="d4" for="edge" attr.name="transportation_mode" attr.type="string"/>
+<key id="d3" for="edge" attr.name="characters" attr.type="string"/>
+<key id="d2" for="edge" attr.name="is_literal" attr.type="boolean"/>
+<key id="d1" for="edge" attr.name="kind" attr.type="string"/>
+<key id="d0" for="node" attr.name="mentions" attr.type="string"/>
+<graph edgedefault="directed"><node id="Water">
+  <data key="d0">[[275, 330]]</data>
+</node>
+<node id="Bone-gray dock">
+  <data key="d0">[[275, 330]]</data>
+</node>
+<node id="Plane">
+  <data key="d0">[[474, 519]]</data>
+</node>
+<node id="Dock">
+  <data key="d0">[[474, 519], [622, 662], [664, 684], [931, 959], [964, 1041], [14352, 14386], [14417, 14449], [14550, 14581], [14954, 14983], [15400, 15464], [15959, 15976]]</data>
+</node>
+<node id="Edge of dock">
+  <data key="d0">[[622, 662]]</data>
+</node>
+<node id="Narrator">
+  <data key="d0">[[664, 684]]</data>
+</node>
+<node id="Cottage">
+  <data key="d0">[[964, 1041], [12979, 13008]]</data>
+</node>
+<node id="Modern living room">
+  <data key="d0">[[2114, 2166]]</data>
+</node>
+<node id="New York">
+  <data key="d0">[[7006, 7054], [7054, 7086], [7156, 7165]]</data>
+</node>
+<node id="Mainland">
+  <data key="d0">[[7656, 7700]]</data>
+</node>
+<node id="Gulf">
+  <data key="d0">[[12736, 12763], [12736, 12763], [13252, 13278]]</data>
+</node>
+<node id="Beach">
+  <data key="d0">[[13252, 13278]]</data>
+</node>
+<node id="House">
+  <data key="d0">[[14417, 14449], [14550, 14581], [14954, 14983], [15400, 15464], [15485, 15510], [15834, 15853]]</data>
+</node>
+<edge source="Water" target="Bone-gray dock" id="0">
+  <data key="d1">traversal</data>
+  <data key="d2">True</data>
+  <data key="d3">["Pilot"]</data>
+  <data key="d4">plane</data>
+  <data key="d5">past</data>
+  <data key="d6">medium</data>
+  <data key="d7">0</data>
+  <data key="d8">none</data>
+  <data key="d9">[275, 330]</data>
+  <data key="d10">The pilot maneuvered the plane against a bone-gray dock</data>
+</edge>
+<edge source="Plane" target="Dock" id="0">
+  <data key="d1">traversal</data>
+  <data key="d2">True</data>
+  <data key="d3">["Paul", "Stokharin", "narrator"]</data>
+  <data key="d4">foot</data>
+  <data key="d5">past</data>
+  <data key="d6">small</data>
+  <data key="d7">0</data>
+  <data key="d8">none</data>
+  <data key="d9">[474, 519]</data>
+  <data key="d10">Paul, Stokharin and I scrambled onto the dock</data>
+</edge>
+<edge source="Dock" target="Edge of dock" id="0">
+  <data key="d1">traversal</data>
+  <data key="d2">True</data>
+  <data key="d3">["Iris"]</data>
+  <data key="d4">foot</data>
+  <data key="d5">past</data>
+  <data key="d6">small</data>
+  <data key="d7">0</data>
+  <data key="d8">none</data>
+  <data key="d9">[622, 662]</data>
+  <data key="d10">Iris laughed and ran forward to greet us</data>
+</edge>
+<edge source="Dock" target="Narrator" id="0">
+  <data key="d1">traversal</data>
+  <data key="d2">True</data>
+  <data key="d3">["Iris"]</data>
+  <data key="d4">foot</data>
+  <data key="d5">past</data>
+  <data key="d6">small</data>
+  <data key="d7">0</data>
+  <data key="d8">none</data>
+  <data key="d9">[664, 684]</data>
+  <data key="d10">she came first to me</data>
+</edge>
+<edge source="Dock" target="Cottage" id="0">
+  <data key="d1">traversal</data>
+  <data key="d2">True</data>
+  <data key="d3">["Iris", "Paul", "Stokharin", "narrator"]</data>
+  <data key="d4">foot</data>
+  <data key="d5">past</data>
+  <data key="d6">medium</data>
+  <data key="d7">0</data>
+  <data key="d8">none</data>
+  <data key="d9">[964, 1041]</data>
+  <data key="d10">across a narrow white beach to a grove of palm trees where the cottage stood.</data>
+</edge>
+<edge source="Dock" target="House" id="0">
+  <data key="d1">hypothetical</data>
+  <data key="d2">False</data>
+  <data key="d3">["Iris", "narrator"]</data>
+  <data key="d4">unclear</data>
+  <data key="d5">future</data>
+  <data key="d6">medium</data>
+  <data key="d7">0</data>
+  <data key="d8">none</data>
+  <data key="d9">[14417, 14449]</data>
+  <data key="d10">We'd better go back to the house</data>
+</edge>
+<edge source="Dock" target="House" id="1">
+  <data key="d1">traversal</data>
+  <data key="d2">True</data>
+  <data key="d3">["Guard", "boatman"]</data>
+  <data key="d4">foot</data>
+  <data key="d5">concurrent</data>
+  <data key="d6">medium</data>
+  <data key="d7">0</data>
+  <data key="d8">none</data>
+  <data key="d9">[14550, 14581]</data>
+  <data key="d10">groceries and mail to the house</data>
+</edge>
+<edge source="Dock" target="House" id="2">
+  <data key="d1">implied</data>
+  <data key="d2">False</data>
+  <data key="d3">["Iris"]</data>
+  <data key="d4">foot</data>
+  <data key="d5">past</data>
+  <data key="d6">medium</data>
+  <data key="d7">0</data>
+  <data key="d8">none</data>
+  <data key="d9">[14954, 14983]</data>
+  <data key="d10">Iris was already at the house</data>
+</edge>
+<edge source="Dock" target="House" id="3">
+  <data key="d1">traversal</data>
+  <data key="d2">True</data>
+  <data key="d3">["Narrator"]</data>
+  <data key="d4">foot</data>
+  <data key="d5">concurrent</data>
+  <data key="d6">medium</data>
+  <data key="d7">0</data>
+  <data key="d8">none</data>
+  <data key="d9">[15400, 15464]</data>
+  <data key="d10">from a side door, the occupants of the house had begun to appear</data>
+</edge>
+<edge source="Edge of dock" target="Dock" id="0">
+  <data key="d1">sequential</data>
+  <data key="d3">["Iris"]</data>
+  <data key="d9">[664, 684]</data>
+</edge>
+<edge source="Narrator" target="Dock" id="0">
+  <data key="d1">sequential</data>
+  <data key="d3">["Iris"]</data>
+  <data key="d9">[931, 959]</data>
+</edge>
+<edge source="Cottage" target="Gulf" id="0">
+  <data key="d1">sequential</data>
+  <data key="d3">["narrator"]</data>
+  <data key="d9">[12736, 12763]</data>
+</edge>
+<edge source="New York" target="Gulf" id="0">
+  <data key="d1">sequential</data>
+  <data key="d3">["Iris"]</data>
+  <data key="d9">[12736, 12763]</data>
+</edge>
+<edge source="Gulf" target="Gulf" id="0">
+  <data key="d1">no_op</data>
+  <data key="d2">True</data>
+  <data key="d3">["Iris", "narrator"]</data>
+  <data key="d4">foot</data>
+  <data key="d5">past</data>
+  <data key="d6">medium</data>
+  <data key="d7">0</data>
+  <data key="d8">none</data>
+  <data key="d9">[12736, 12763]</data>
+  <data key="d10">Iris and I swam in the Gulf</data>
+</edge>
+<edge source="Gulf" target="Beach" id="0">
+  <data key="d1">traversal</data>
+  <data key="d2">True</data>
+  <data key="d3">["Iris", "narrator"]</data>
+  <data key="d4">foot</data>
+  <data key="d5">past</data>
+  <data key="d6">small</data>
+  <data key="d7">0</data>
+  <data key="d8">none</data>
+  <data key="d9">[13252, 13278]</data>
+  <data key="d10">we crawled up on the beach</data>
+</edge>
+<edge source="Beach" target="Dock" id="0">
+  <data key="d1">sequential</data>
+  <data key="d3">["Iris"]</data>
+  <data key="d9">[14417, 14449]</data>
+</edge>
+<edge source="Beach" target="Dock" id="1">
+  <data key="d1">sequential</data>
+  <data key="d3">["narrator"]</data>
+  <data key="d9">[14417, 14449]</data>
+</edge>
+<edge source="House" target="Dock" id="0">
+  <data key="d1">sequential</data>
+  <data key="d3">["Iris"]</data>
+  <data key="d9">[14954, 14983]</data>
+</edge>
+</graph></graphml>

@@ -1,0 +1,408 @@
+{
+  "annotations": [
+    {
+      "text": "The pilot maneuvered the plane against a bone-gray dock",
+      "start_ind": 275,
+      "end_ind": 330,
+      "type": "Literal",
+      "tense": "past",
+      "origin": "Water",
+      "destination": "Bone-gray dock",
+      "transportation_mode": "plane",
+      "scale": "medium",
+      "distance": null,
+      "distance_unit": "none",
+      "characters": [
+        "Pilot"
+      ],
+      "scale_uncertainty": 0
+    },
+    {
+      "text": "Paul, Stokharin and I scrambled onto the dock",
+      "start_ind": 474,
+      "end_ind": 519,
+      "type": "Literal",
+      "tense": "past",
+      "origin": "Plane",
+      "destination": "Dock",
+      "transportation_mode": "foot",
+      "scale": "small",
+      "distance": null,
+      "distance_unit": "none",
+      "characters": [
+        "Paul",
+        "Stokharin",
+        "narrator"
+      ],
+      "scale_uncertainty": 0
+    },
+    {
+      "text": "Iris laughed and ran forward to greet us",
+      "start_ind": 622,
+      "end_ind": 662,
+      "type": "Literal",
+      "tense": "past",
+      "origin": "Dock",
+      "destination": "Edge of dock",
+      "transportation_mode": "foot",
+      "scale": "small",
+      "distance": null,
+      "distance_unit": "none",
+      "characters": [
+        "Iris"
+      ],
+      "scale_uncertainty": 0
+    },
+    {
+      "text": "she came first to me",
+      "start_ind": 664,
+      "end_ind": 684,
+      "type": "Literal",
+      "tense": "past",
+      "origin": "Dock",
+      "destination": "Narrator",
+      "transportation_mode": "foot",
+      "scale": "small",
+      "distance": null,
+      "distance_unit": "none",
+      "characters": [
+        "Iris"
+      ],
+      "scale_uncertainty": 0
+    },
+    {
+      "text": "she escorted us off the dock",
+      "start_ind": 931,
+      "end_ind": 959,
+      "type": "Literal",
+      "tense": "past",
+      "origin": "Dock",
+      "destination": "",
+      "transportation_mode": "foot",
+      "scale": "small",
+      "distance": null,
+      "distance_unit": "none",
+      "characters": [
+        "Iris",
+        "Paul",
+        "Stokharin",
+        "narrator"
+      ],
+      "scale_uncertainty": 0
+    },
+    {
+      "text": "across a narrow white beach to a grove of palm trees where the cottage stood.",
+      "start_ind": 964,
+      "end_ind": 1041,
+      "type": "Literal",
+      "tense": "past",
+      "origin": "Dock",
+      "destination": "Cottage",
+      "transportation_mode": "foot",
+      "scale": "medium",
+      "distance": null,
+      "distance_unit": "none",
+      "characters": [
+        "Iris",
+        "Paul",
+        "Stokharin",
+        "narrator"
+      ],
+      "scale_uncertainty": 0
+    },
+    {
+      "text": "Paul prowled restlessly about the modern living room",
+      "start_ind": 2114,
+      "end_ind": 2166,
+      "type": "Literal",
+      "tense": "past",
+      "origin": "",
+      "destination": "Modern living room",
+      "transportation_mode": "foot",
+      "scale": "small",
+      "distance": null,
+      "distance_unit": "none",
+      "characters": [
+        "Paul"
+      ],
+      "scale_uncertainty": 0
+    },
+    {
+      "text": "I must get back to New York soon, to the school.",
+      "start_ind": 7006,
+      "end_ind": 7054,
+      "type": "Hypothetical",
+      "tense": "future",
+      "origin": "",
+      "destination": "New York",
+      "transportation_mode": "unclear",
+      "scale": "large",
+      "distance": null,
+      "distance_unit": "none",
+      "characters": [
+        "Iris"
+      ],
+      "scale_uncertainty": 0
+    },
+    {
+      "text": "so I came",
+      "start_ind": 7156,
+      "end_ind": 7165,
+      "type": "Literal",
+      "tense": "past",
+      "origin": "New York",
+      "destination": "",
+      "transportation_mode": "unclear",
+      "scale": "large",
+      "distance": null,
+      "distance_unit": "none",
+      "characters": [
+        "Iris"
+      ],
+      "scale_uncertainty": 0
+    },
+    {
+      "text": "I shouldn't really have gone off",
+      "start_ind": 7054,
+      "end_ind": 7086,
+      "type": "Literal",
+      "tense": "past",
+      "origin": "",
+      "destination": "New York",
+      "transportation_mode": "unclear",
+      "scale": "large",
+      "distance": null,
+      "distance_unit": "none",
+      "characters": [
+        "Iris"
+      ],
+      "scale_uncertainty": 0
+    },
+    {
+      "text": "no cranks have got through from the mainland",
+      "start_ind": 7656,
+      "end_ind": 7700,
+      "type": "Negative Hypothetical",
+      "tense": "past",
+      "origin": "Mainland",
+      "destination": "",
+      "transportation_mode": "unclear",
+      "scale": "large",
+      "distance": null,
+      "distance_unit": "none",
+      "characters": [
+        "Crank"
+      ],
+      "scale_uncertainty": 0
+    },
+    {
+      "text": "we're marooned here",
+      "start_ind": 7794,
+      "end_ind": 7813,
+      "type": "Negative Hypothetical",
+      "tense": "concurrent",
+      "origin": "",
+      "destination": "",
+      "transportation_mode": "unclear",
+      "scale": "large",
+      "distance": null,
+      "distance_unit": "none",
+      "characters": [
+        "We"
+      ],
+      "scale_uncertainty": 0
+    },
+    {
+      "text": "Iris and I swam in the Gulf",
+      "start_ind": 12736,
+      "end_ind": 12763,
+      "type": "Literal",
+      "tense": "past",
+      "origin": "Gulf",
+      "destination": "Gulf",
+      "transportation_mode": "foot",
+      "scale": "medium",
+      "distance": null,
+      "distance_unit": "none",
+      "characters": [
+        "Iris",
+        "narrator"
+      ],
+      "scale_uncertainty": 0
+    },
+    {
+      "text": "the others never ventured out",
+      "start_ind": 12979,
+      "end_ind": 13008,
+      "type": "Negative Hypothetical",
+      "tense": "past",
+      "origin": "Cottage",
+      "destination": "",
+      "transportation_mode": "unclear",
+      "scale": "medium",
+      "distance": null,
+      "distance_unit": "none",
+      "characters": [
+        "Others"
+      ],
+      "scale_uncertainty": 0
+    },
+    {
+      "text": "we crawled up on the beach",
+      "start_ind": 13252,
+      "end_ind": 13278,
+      "type": "Literal",
+      "tense": "past",
+      "origin": "Gulf",
+      "destination": "Beach",
+      "transportation_mode": "foot",
+      "scale": "small",
+      "distance": null,
+      "distance_unit": "none",
+      "characters": [
+        "Iris",
+        "narrator"
+      ],
+      "scale_uncertainty": 0
+    },
+    {
+      "text": "a motorboat pulling into the dock.",
+      "start_ind": 14352,
+      "end_ind": 14386,
+      "type": "Literal",
+      "tense": "concurrent",
+      "origin": "",
+      "destination": "Dock",
+      "transportation_mode": "boat",
+      "scale": "large",
+      "distance": null,
+      "distance_unit": "none",
+      "characters": [
+        "Mailman"
+      ],
+      "scale_uncertainty": 0
+    },
+    {
+      "text": "We'd better go back to the house",
+      "start_ind": 14417,
+      "end_ind": 14449,
+      "type": "Hypothetical",
+      "tense": "future",
+      "origin": "Dock",
+      "destination": "House",
+      "transportation_mode": "unclear",
+      "scale": "medium",
+      "distance": null,
+      "distance_unit": "none",
+      "characters": [
+        "Iris",
+        "narrator"
+      ],
+      "scale_uncertainty": 0
+    },
+    {
+      "text": "groceries and mail to the house",
+      "start_ind": 14550,
+      "end_ind": 14581,
+      "type": "Literal",
+      "tense": "concurrent",
+      "origin": "Dock",
+      "destination": "House",
+      "transportation_mode": "foot",
+      "scale": "medium",
+      "distance": null,
+      "distance_unit": "none",
+      "characters": [
+        "Guard",
+        "boatman"
+      ],
+      "scale_uncertainty": 0
+    },
+    {
+      "text": "Iris was already at the house",
+      "start_ind": 14954,
+      "end_ind": 14983,
+      "type": "Implied",
+      "tense": "past",
+      "origin": "Dock",
+      "destination": "House",
+      "transportation_mode": "foot",
+      "scale": "medium",
+      "distance": null,
+      "distance_unit": "none",
+      "characters": [
+        "Iris"
+      ],
+      "scale_uncertainty": 0
+    },
+    {
+      "text": "I limped toward the house",
+      "start_ind": 15485,
+      "end_ind": 15510,
+      "type": "Literal",
+      "tense": "concurrent",
+      "origin": "House",
+      "destination": "",
+      "transportation_mode": "foot",
+      "scale": "medium",
+      "distance": null,
+      "distance_unit": "none",
+      "characters": [
+        "Occupants"
+      ],
+      "scale_uncertainty": 0
+    },
+    {
+      "text": "from a side door, the occupants of the house had begun to appear",
+      "start_ind": 15400,
+      "end_ind": 15464,
+      "type": "Literal",
+      "tense": "concurrent",
+      "origin": "Dock",
+      "destination": "House",
+      "transportation_mode": "foot",
+      "scale": "medium",
+      "distance": null,
+      "distance_unit": "none",
+      "characters": [
+        "Narrator"
+      ],
+      "scale_uncertainty": 0
+    },
+    {
+      "text": "fled into the house",
+      "start_ind": 15834,
+      "end_ind": 15853,
+      "type": "Literal",
+      "tense": "concurrent",
+      "origin": "",
+      "destination": "House",
+      "transportation_mode": "foot",
+      "scale": "small",
+      "distance": null,
+      "distance_unit": "none",
+      "characters": [
+        "Iris"
+      ],
+      "scale_uncertainty": 0
+    },
+    {
+      "text": "other guards came",
+      "start_ind": 15959,
+      "end_ind": 15976,
+      "type": "Literal",
+      "tense": "concurrent",
+      "origin": "",
+      "destination": "Dock",
+      "transportation_mode": "foot",
+      "scale": "medium",
+      "distance": null,
+      "distance_unit": "none",
+      "characters": [
+        "Other guards"
+      ],
+      "scale_uncertainty": 0
+    }
+  ],
+  "character_registry": {}
+}

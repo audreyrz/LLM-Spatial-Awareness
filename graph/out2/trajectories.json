@@ -1,0 +1,622 @@
+{
+  "Pilot": [
+    {
+      "event": 0,
+      "place": "Water",
+      "role": "origin",
+      "span": [
+        275,
+        330
+      ],
+      "type": "literal",
+      "text": "The pilot maneuvered the plane against a bone-gray dock"
+    },
+    {
+      "event": 0,
+      "place": "Bone-gray dock",
+      "role": "destination",
+      "span": [
+        275,
+        330
+      ],
+      "type": "literal",
+      "text": "The pilot maneuvered the plane against a bone-gray dock"
+    }
+  ],
+  "Paul": [
+    {
+      "event": 1,
+      "place": "Plane",
+      "role": "origin",
+      "span": [
+        474,
+        519
+      ],
+      "type": "literal",
+      "text": "Paul, Stokharin and I scrambled onto the dock"
+    },
+    {
+      "event": 1,
+      "place": "Dock",
+      "role": "destination",
+      "span": [
+        474,
+        519
+      ],
+      "type": "literal",
+      "text": "Paul, Stokharin and I scrambled onto the dock"
+    },
+    {
+      "event": 4,
+      "place": "Dock",
+      "role": "origin",
+      "span": [
+        931,
+        959
+      ],
+      "type": "literal",
+      "text": "she escorted us off the dock"
+    },
+    {
+      "event": 5,
+      "place": "Dock",
+      "role": "origin",
+      "span": [
+        964,
+        1041
+      ],
+      "type": "literal",
+      "text": "across a narrow white beach to a grove of palm trees where the cottage stood."
+    },
+    {
+      "event": 5,
+      "place": "Cottage",
+      "role": "destination",
+      "span": [
+        964,
+        1041
+      ],
+      "type": "literal",
+      "text": "across a narrow white beach to a grove of palm trees where the cottage stood."
+    },
+    {
+      "event": 6,
+      "place": "Modern living room",
+      "role": "destination",
+      "span": [
+        2114,
+        2166
+      ],
+      "type": "literal",
+      "text": "Paul prowled restlessly about the modern living room"
+    }
+  ],
+  "Stokharin": [
+    {
+      "event": 1,
+      "place": "Plane",
+      "role": "origin",
+      "span": [
+        474,
+        519
+      ],
+      "type": "literal",
+      "text": "Paul, Stokharin and I scrambled onto the dock"
+    },
+    {
+      "event": 1,
+      "place": "Dock",
+      "role": "destination",
+      "span": [
+        474,
+        519
+      ],
+      "type": "literal",
+      "text": "Paul, Stokharin and I scrambled onto the dock"
+    },
+    {
+      "event": 4,
+      "place": "Dock",
+      "role": "origin",
+      "span": [
+        931,
+        959
+      ],
+      "type": "literal",
+      "text": "she escorted us off the dock"
+    },
+    {
+      "event": 5,
+      "place": "Dock",
+      "role": "origin",
+      "span": [
+        964,
+        1041
+      ],
+      "type": "literal",
+      "text": "across a narrow white beach to a grove of palm trees where the cottage stood."
+    },
+    {
+      "event": 5,
+      "place": "Cottage",
+      "role": "destination",
+      "span": [
+        964,
+        1041
+      ],
+      "type": "literal",
+      "text": "across a narrow white beach to a grove of palm trees where the cottage stood."
+    }
+  ],
+  "narrator": [
+    {
+      "event": 1,
+      "place": "Plane",
+      "role": "origin",
+      "span": [
+        474,
+        519
+      ],
+      "type": "literal",
+      "text": "Paul, Stokharin and I scrambled onto the dock"
+    },
+    {
+      "event": 1,
+      "place": "Dock",
+      "role": "destination",
+      "span": [
+        474,
+        519
+      ],
+      "type": "literal",
+      "text": "Paul, Stokharin and I scrambled onto the dock"
+    },
+    {
+      "event": 4,
+      "place": "Dock",
+      "role": "origin",
+      "span": [
+        931,
+        959
+      ],
+      "type": "literal",
+      "text": "she escorted us off the dock"
+    },
+    {
+      "event": 5,
+      "place": "Dock",
+      "role": "origin",
+      "span": [
+        964,
+        1041
+      ],
+      "type": "literal",
+      "text": "across a narrow white beach to a grove of palm trees where the cottage stood."
+    },
+    {
+      "event": 5,
+      "place": "Cottage",
+      "role": "destination",
+      "span": [
+        964,
+        1041
+      ],
+      "type": "literal",
+      "text": "across a narrow white beach to a grove of palm trees where the cottage stood."
+    },
+    {
+      "event": 12,
+      "place": "Gulf",
+      "role": "origin",
+      "span": [
+        12736,
+        12763
+      ],
+      "type": "literal",
+      "text": "Iris and I swam in the Gulf"
+    },
+    {
+      "event": 12,
+      "place": "Gulf",
+      "role": "destination",
+      "span": [
+        12736,
+        12763
+      ],
+      "type": "literal",
+      "text": "Iris and I swam in the Gulf"
+    },
+    {
+      "event": 14,
+      "place": "Gulf",
+      "role": "origin",
+      "span": [
+        13252,
+        13278
+      ],
+      "type": "literal",
+      "text": "we crawled up on the beach"
+    },
+    {
+      "event": 14,
+      "place": "Beach",
+      "role": "destination",
+      "span": [
+        13252,
+        13278
+      ],
+      "type": "literal",
+      "text": "we crawled up on the beach"
+    },
+    {
+      "event": 16,
+      "place": "Dock",
+      "role": "origin",
+      "span": [
+        14417,
+        14449
+      ],
+      "type": "hypothetical",
+      "text": "We'd better go back to the house"
+    },
+    {
+      "event": 16,
+      "place": "House",
+      "role": "destination",
+      "span": [
+        14417,
+        14449
+      ],
+      "type": "hypothetical",
+      "text": "We'd better go back to the house"
+    }
+  ],
+  "Iris": [
+    {
+      "event": 2,
+      "place": "Dock",
+      "role": "origin",
+      "span": [
+        622,
+        662
+      ],
+      "type": "literal",
+      "text": "Iris laughed and ran forward to greet us"
+    },
+    {
+      "event": 2,
+      "place": "Edge of dock",
+      "role": "destination",
+      "span": [
+        622,
+        662
+      ],
+      "type": "literal",
+      "text": "Iris laughed and ran forward to greet us"
+    },
+    {
+      "event": 3,
+      "place": "Dock",
+      "role": "origin",
+      "span": [
+        664,
+        684
+      ],
+      "type": "literal",
+      "text": "she came first to me"
+    },
+    {
+      "event": 3,
+      "place": "Narrator",
+      "role": "destination",
+      "span": [
+        664,
+        684
+      ],
+      "type": "literal",
+      "text": "she came first to me"
+    },
+    {
+      "event": 4,
+      "place": "Dock",
+      "role": "origin",
+      "span": [
+        931,
+        959
+      ],
+      "type": "literal",
+      "text": "she escorted us off the dock"
+    },
+    {
+      "event": 5,
+      "place": "Dock",
+      "role": "origin",
+      "span": [
+        964,
+        1041
+      ],
+      "type": "literal",
+      "text": "across a narrow white beach to a grove of palm trees where the cottage stood."
+    },
+    {
+      "event": 5,
+      "place": "Cottage",
+      "role": "destination",
+      "span": [
+        964,
+        1041
+      ],
+      "type": "literal",
+      "text": "across a narrow white beach to a grove of palm trees where the cottage stood."
+    },
+    {
+      "event": 7,
+      "place": "New York",
+      "role": "destination",
+      "span": [
+        7006,
+        7054
+      ],
+      "type": "hypothetical",
+      "text": "I must get back to New York soon, to the school."
+    },
+    {
+      "event": 8,
+      "place": "New York",
+      "role": "destination",
+      "span": [
+        7054,
+        7086
+      ],
+      "type": "literal",
+      "text": "I shouldn't really have gone off"
+    },
+    {
+      "event": 9,
+      "place": "New York",
+      "role": "origin",
+      "span": [
+        7156,
+        7165
+      ],
+      "type": "literal",
+      "text": "so I came"
+    },
+    {
+      "event": 12,
+      "place": "Gulf",
+      "role": "origin",
+      "span": [
+        12736,
+        12763
+      ],
+      "type": "literal",
+      "text": "Iris and I swam in the Gulf"
+    },
+    {
+      "event": 12,
+      "place": "Gulf",
+      "role": "destination",
+      "span": [
+        12736,
+        12763
+      ],
+      "type": "literal",
+      "text": "Iris and I swam in the Gulf"
+    },
+    {
+      "event": 14,
+      "place": "Gulf",
+      "role": "origin",
+      "span": [
+        13252,
+        13278
+      ],
+      "type": "literal",
+      "text": "we crawled up on the beach"
+    },
+    {
+      "event": 14,
+      "place": "Beach",
+      "role": "destination",
+      "span": [
+        13252,
+        13278
+      ],
+      "type": "literal",
+      "text": "we crawled up on the beach"
+    },
+    {
+      "event": 16,
+      "place": "Dock",
+      "role": "origin",
+      "span": [
+        14417,
+        14449
+      ],
+      "type": "hypothetical",
+      "text": "We'd better go back to the house"
+    },
+    {
+      "event": 16,
+      "place": "House",
+      "role": "destination",
+      "span": [
+        14417,
+        14449
+      ],
+      "type": "hypothetical",
+      "text": "We'd better go back to the house"
+    },
+    {
+      "event": 18,
+      "place": "Dock",
+      "role": "origin",
+      "span": [
+        14954,
+        14983
+      ],
+      "type": "implied",
+      "text": "Iris was already at the house"
+    },
+    {
+      "event": 18,
+      "place": "House",
+      "role": "destination",
+      "span": [
+        14954,
+        14983
+      ],
+      "type": "implied",
+      "text": "Iris was already at the house"
+    },
+    {
+      "event": 21,
+      "place": "House",
+      "role": "destination",
+      "span": [
+        15834,
+        15853
+      ],
+      "type": "literal",
+      "text": "fled into the house"
+    }
+  ],
+  "Crank": [
+    {
+      "event": 10,
+      "place": "Mainland",
+      "role": "origin",
+      "span": [
+        7656,
+        7700
+      ],
+      "type": "negative hypothetical",
+      "text": "no cranks have got through from the mainland"
+    }
+  ],
+  "Others": [
+    {
+      "event": 13,
+      "place": "Cottage",
+      "role": "origin",
+      "span": [
+        12979,
+        13008
+      ],
+      "type": "negative hypothetical",
+      "text": "the others never ventured out"
+    }
+  ],
+  "Mailman": [
+    {
+      "event": 15,
+      "place": "Dock",
+      "role": "destination",
+      "span": [
+        14352,
+        14386
+      ],
+      "type": "literal",
+      "text": "a motorboat pulling into the dock."
+    }
+  ],
+  "Guard": [
+    {
+      "event": 17,
+      "place": "Dock",
+      "role": "origin",
+      "span": [
+        14550,
+        14581
+      ],
+      "type": "literal",
+      "text": "groceries and mail to the house"
+    },
+    {
+      "event": 17,
+      "place": "House",
+      "role": "destination",
+      "span": [
+        14550,
+        14581
+      ],
+      "type": "literal",
+      "text": "groceries and mail to the house"
+    }
+  ],
+  "boatman": [
+    {
+      "event": 17,
+      "place": "Dock",
+      "role": "origin",
+      "span": [
+        14550,
+        14581
+      ],
+      "type": "literal",
+      "text": "groceries and mail to the house"
+    },
+    {
+      "event": 17,
+      "place": "House",
+      "role": "destination",
+      "span": [
+        14550,
+        14581
+      ],
+      "type": "literal",
+      "text": "groceries and mail to the house"
+    }
+  ],
+  "Narrator": [
+    {
+      "event": 19,
+      "place": "Dock",
+      "role": "origin",
+      "span": [
+        15400,
+        15464
+      ],
+      "type": "literal",
+      "text": "from a side door, the occupants of the house had begun to appear"
+    },
+    {
+      "event": 19,
+      "place": "House",
+      "role": "destination",
+      "span": [
+        15400,
+        15464
+      ],
+      "type": "literal",
+      "text": "from a side door, the occupants of the house had begun to appear"
+    }
+  ],
+  "Occupants": [
+    {
+      "event": 20,
+      "place": "House",
+      "role": "origin",
+      "span": [
+        15485,
+        15510
+      ],
+      "type": "literal",
+      "text": "I limped toward the house"
+    }
+  ],
+  "Other guards": [
+    {
+      "event": 22,
+      "place": "Dock",
+      "role": "destination",
+      "span": [
+        15959,
+        15976
+      ],
+      "type": "literal",
+      "text": "other guards came"
+    }
+  ]
+}

@@ -1,0 +1,548 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {},
+  "nodes": [
+    {
+      "mentions": [
+        [
+          275,
+          330
+        ]
+      ],
+      "id": "Water"
+    },
+    {
+      "mentions": [
+        [
+          275,
+          330
+        ]
+      ],
+      "id": "Bone-gray dock"
+    },
+    {
+      "mentions": [
+        [
+          474,
+          519
+        ]
+      ],
+      "id": "Plane"
+    },
+    {
+      "mentions": [
+        [
+          474,
+          519
+        ],
+        [
+          622,
+          662
+        ],
+        [
+          664,
+          684
+        ],
+        [
+          931,
+          959
+        ],
+        [
+          964,
+          1041
+        ],
+        [
+          14352,
+          14386
+        ],
+        [
+          14417,
+          14449
+        ],
+        [
+          14550,
+          14581
+        ],
+        [
+          14954,
+          14983
+        ],
+        [
+          15400,
+          15464
+        ],
+        [
+          15959,
+          15976
+        ]
+      ],
+      "id": "Dock"
+    },
+    {
+      "mentions": [
+        [
+          622,
+          662
+        ]
+      ],
+      "id": "Edge of dock"
+    },
+    {
+      "mentions": [
+        [
+          664,
+          684
+        ]
+      ],
+      "id": "Narrator"
+    },
+    {
+      "mentions": [
+        [
+          964,
+          1041
+        ],
+        [
+          12979,
+          13008
+        ]
+      ],
+      "id": "Cottage"
+    },
+    {
+      "mentions": [
+        [
+          2114,
+          2166
+        ]
+      ],
+      "id": "Modern living room"
+    },
+    {
+      "mentions": [
+        [
+          7006,
+          7054
+        ],
+        [
+          7054,
+          7086
+        ],
+        [
+          7156,
+          7165
+        ]
+      ],
+      "id": "New York"
+    },
+    {
+      "mentions": [
+        [
+          7656,
+          7700
+        ]
+      ],
+      "id": "Mainland"
+    },
+    {
+      "mentions": [
+        [
+          12736,
+          12763
+        ],
+        [
+          12736,
+          12763
+        ],
+        [
+          13252,
+          13278
+        ]
+      ],
+      "id": "Gulf"
+    },
+    {
+      "mentions": [
+        [
+          13252,
+          13278
+        ]
+      ],
+      "id": "Beach"
+    },
+    {
+      "mentions": [
+        [
+          14417,
+          14449
+        ],
+        [
+          14550,
+          14581
+        ],
+        [
+          14954,
+          14983
+        ],
+        [
+          15400,
+          15464
+        ],
+        [
+          15485,
+          15510
+        ],
+        [
+          15834,
+          15853
+        ]
+      ],
+      "id": "House"
+    }
+  ],
+  "edges": [
+    {
+      "kind": "traversal",
+      "is_literal": true,
+      "characters": [
+        "Pilot"
+      ],
+      "transportation_mode": "plane",
+      "tense": "past",
+      "scale": "medium",
+      "scale_uncertainty": 0,
+      "distance": null,
+      "distance_unit": "none",
+      "distance_m": null,
+      "span": [
+        275,
+        330
+      ],
+      "text": "The pilot maneuvered the plane against a bone-gray dock",
+      "source": "Water",
+      "target": "Bone-gray dock",
+      "key": 0
+    },
+    {
+      "kind": "traversal",
+      "is_literal": true,
+      "characters": [
+        "Paul",
+        "Stokharin",
+        "narrator"
+      ],
+      "transportation_mode": "foot",
+      "tense": "past",
+      "scale": "small",
+      "scale_uncertainty": 0,
+      "distance": null,
+      "distance_unit": "none",
+      "distance_m": null,
+      "span": [
+        474,
+        519
+      ],
+      "text": "Paul, Stokharin and I scrambled onto the dock",
+      "source": "Plane",
+      "target": "Dock",
+      "key": 0
+    },
+    {
+      "kind": "traversal",
+      "is_literal": true,
+      "characters": [
+        "Iris"
+      ],
+      "transportation_mode": "foot",
+      "tense": "past",
+      "scale": "small",
+      "scale_uncertainty": 0,
+      "distance": null,
+      "distance_unit": "none",
+      "distance_m": null,
+      "span": [
+        622,
+        662
+      ],
+      "text": "Iris laughed and ran forward to greet us",
+      "source": "Dock",
+      "target": "Edge of dock",
+      "key": 0
+    },
+    {
+      "kind": "traversal",
+      "is_literal": true,
+      "characters": [
+        "Iris"
+      ],
+      "transportation_mode": "foot",
+      "tense": "past",
+      "scale": "small",
+      "scale_uncertainty": 0,
+      "distance": null,
+      "distance_unit": "none",
+      "distance_m": null,
+      "span": [
+        664,
+        684
+      ],
+      "text": "she came first to me",
+      "source": "Dock",
+      "target": "Narrator",
+      "key": 0
+    },
+    {
+      "kind": "traversal",
+      "is_literal": true,
+      "characters": [
+        "Iris",
+        "Paul",
+        "Stokharin",
+        "narrator"
+      ],
+      "transportation_mode": "foot",
+      "tense": "past",
+      "scale": "medium",
+      "scale_uncertainty": 0,
+      "distance": null,
+      "distance_unit": "none",
+      "distance_m": null,
+      "span": [
+        964,
+        1041
+      ],
+      "text": "across a narrow white beach to a grove of palm trees where the cottage stood.",
+      "source": "Dock",
+      "target": "Cottage",
+      "key": 0
+    },
+    {
+      "kind": "hypothetical",
+      "is_literal": false,
+      "characters": [
+        "Iris",
+        "narrator"
+      ],
+      "transportation_mode": "unclear",
+      "tense": "future",
+      "scale": "medium",
+      "scale_uncertainty": 0,
+      "distance": null,
+      "distance_unit": "none",
+      "distance_m": null,
+      "span": [
+        14417,
+        14449
+      ],
+      "text": "We'd better go back to the house",
+      "source": "Dock",
+      "target": "House",
+      "key": 0
+    },
+    {
+      "kind": "traversal",
+      "is_literal": true,
+      "characters": [
+        "Guard",
+        "boatman"
+      ],
+      "transportation_mode": "foot",
+      "tense": "concurrent",
+      "scale": "medium",
+      "scale_uncertainty": 0,
+      "distance": null,
+      "distance_unit": "none",
+      "distance_m": null,
+      "span": [
+        14550,
+        14581
+      ],
+      "text": "groceries and mail to the house",
+      "source": "Dock",
+      "target": "House",
+      "key": 1
+    },
+    {
+      "kind": "implied",
+      "is_literal": false,
+      "characters": [
+        "Iris"
+      ],
+      "transportation_mode": "foot",
+      "tense": "past",
+      "scale": "medium",
+      "scale_uncertainty": 0,
+      "distance": null,
+      "distance_unit": "none",
+      "distance_m": null,
+      "span": [
+        14954,
+        14983
+      ],
+      "text": "Iris was already at the house",
+      "source": "Dock",
+      "target": "House",
+      "key": 2
+    },
+    {
+      "kind": "traversal",
+      "is_literal": true,
+      "characters": [
+        "Narrator"
+      ],
+      "transportation_mode": "foot",
+      "tense": "concurrent",
+      "scale": "medium",
+      "scale_uncertainty": 0,
+      "distance": null,
+      "distance_unit": "none",
+      "distance_m": null,
+      "span": [
+        15400,
+        15464
+      ],
+      "text": "from a side door, the occupants of the house had begun to appear",
+      "source": "Dock",
+      "target": "House",
+      "key": 3
+    },
+    {
+      "kind": "sequential",
+      "characters": [
+        "Iris"
+      ],
+      "span": [
+        664,
+        684
+      ],
+      "source": "Edge of dock",
+      "target": "Dock",
+      "key": 0
+    },
+    {
+      "kind": "sequential",
+      "characters": [
+        "Iris"
+      ],
+      "span": [
+        931,
+        959
+      ],
+      "source": "Narrator",
+      "target": "Dock",
+      "key": 0
+    },
+    {
+      "kind": "sequential",
+      "characters": [
+        "narrator"
+      ],
+      "span": [
+        12736,
+        12763
+      ],
+      "source": "Cottage",
+      "target": "Gulf",
+      "key": 0
+    },
+    {
+      "kind": "sequential",
+      "characters": [
+        "Iris"
+      ],
+      "span": [
+        12736,
+        12763
+      ],
+      "source": "New York",
+      "target": "Gulf",
+      "key": 0
+    },
+    {
+      "kind": "no_op",
+      "is_literal": true,
+      "characters": [
+        "Iris",
+        "narrator"
+      ],
+      "transportation_mode": "foot",
+      "tense": "past",
+      "scale": "medium",
+      "scale_uncertainty": 0,
+      "distance": null,
+      "distance_unit": "none",
+      "distance_m": null,
+      "span": [
+        12736,
+        12763
+      ],
+      "text": "Iris and I swam in the Gulf",
+      "source": "Gulf",
+      "target": "Gulf",
+      "key": 0
+    },
+    {
+      "kind": "traversal",
+      "is_literal": true,
+      "characters": [
+        "Iris",
+        "narrator"
+      ],
+      "transportation_mode": "foot",
+      "tense": "past",
+      "scale": "small",
+      "scale_uncertainty": 0,
+      "distance": null,
+      "distance_unit": "none",
+      "distance_m": null,
+      "span": [
+        13252,
+        13278
+      ],
+      "text": "we crawled up on the beach",
+      "source": "Gulf",
+      "target": "Beach",
+      "key": 0
+    },
+    {
+      "kind": "sequential",
+      "characters": [
+        "Iris"
+      ],
+      "span": [
+        14417,
+        14449
+      ],
+      "source": "Beach",
+      "target": "Dock",
+      "key": 0
+    },
+    {
+      "kind": "sequential",
+      "characters": [
+        "narrator"
+      ],
+      "span": [
+        14417,
+        14449
+      ],
+      "source": "Beach",
+      "target": "Dock",
+      "key": 1
+    },
+    {
+      "kind": "sequential",
+      "characters": [
+        "Iris"
+      ],
+      "span": [
+        14954,
+        14983
+      ],
+      "source": "House",
+      "target": "Dock",
+      "key": 0
+    }
+  ]
+}

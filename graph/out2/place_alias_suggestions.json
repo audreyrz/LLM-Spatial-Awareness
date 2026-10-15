@@ -1,0 +1,12 @@
+[
+  {
+    "a": "Dock",
+    "b": "Edge of dock",
+    "similarity": 0.5
+  },
+  {
+    "a": "Bone-gray dock",
+    "b": "Dock",
+    "similarity": 0.44
+  }
+]
