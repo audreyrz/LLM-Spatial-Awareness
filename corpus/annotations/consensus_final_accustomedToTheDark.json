@@ -1,0 +1,302 @@
+[
+  {
+    "text": "I presented myself at the desk",
+    "start_ind": 190,
+    "end_ind": 220
+  },
+  {
+    "text": "Labbady arrived",
+    "start_ind": 377,
+    "end_ind": 392
+  },
+  {
+    "text": "I wandered around the huge lobby",
+    "start_ind": 418,
+    "end_ind": 450
+  },
+  {
+    "text": "I followed him out the front door",
+    "start_ind": 1462,
+    "end_ind": 1495
+  },
+  {
+    "text": "to the right across the sunlit concrete plaza",
+    "start_ind": 1500,
+    "end_ind": 1545
+  },
+  {
+    "text": "Labbady led me a block or two down Thirteenth",
+    "start_ind": 1963,
+    "end_ind": 2008
+  },
+  {
+    "text": "up the stairs of a small restaurant",
+    "start_ind": 2013,
+    "end_ind": 2048
+  },
+  {
+    "text": "seated us at the bar",
+    "start_ind": 2108,
+    "end_ind": 2128
+  },
+  {
+    "text": "We sat in a booth",
+    "start_ind": 2392,
+    "end_ind": 2409
+  },
+  {
+    "text": "I didn’t feel as though I had been transported to Picadilly Circus",
+    "start_ind": 2544,
+    "end_ind": 2610
+  },
+  {
+    "text": "before leaving Pueblo",
+    "start_ind": 3103,
+    "end_ind": 3124
+  },
+  {
+    "text": "I arrived in Denver",
+    "start_ind": 3141,
+    "end_ind": 3160
+  },
+  {
+    "text": "A waitress materialized at the table",
+    "start_ind": 3672,
+    "end_ind": 3708
+  },
+  {
+    "text": "she left",
+    "start_ind": 3982,
+    "end_ind": 3990
+  },
+  {
+    "text": "in Miami when he showed up there",
+    "start_ind": 4858,
+    "end_ind": 4890
+  },
+  {
+    "text": "They sent him to Dallas",
+    "start_ind": 5741,
+    "end_ind": 5764
+  },
+  {
+    "text": "He came here",
+    "start_ind": 5912,
+    "end_ind": 5924
+  },
+  {
+    "text": "Luiz went down there",
+    "start_ind": 6291,
+    "end_ind": 6311
+  },
+  {
+    "text": "he was coming",
+    "start_ind": 6368,
+    "end_ind": 6381
+  },
+  {
+    "text": "He made his way in there, into Carlyle’s house",
+    "start_ind": 6518,
+    "end_ind": 6564
+  },
+  {
+    "text": "almost managed to make it back out",
+    "start_ind": 6584,
+    "end_ind": 6618
+  },
+  {
+    "text": "The waitress materialized again",
+    "start_ind": 6622,
+    "end_ind": 6653
+  },
+  {
+    "text": "The waitress brought two more beers",
+    "start_ind": 6865,
+    "end_ind": 6900
+  },
+  {
+    "text": "before he got there",
+    "start_ind": 7786,
+    "end_ind": 7805
+  },
+  {
+    "text": "he’s on his way to Florida",
+    "start_ind": 8244,
+    "end_ind": 8270
+  },
+  {
+    "text": "try to leave the country",
+    "start_ind": 8359,
+    "end_ind": 8383
+  },
+  {
+    "text": "Maybe he’ll take off for South America",
+    "start_ind": 8585,
+    "end_ind": 8623
+  },
+  {
+    "text": "if I poked around in Denver",
+    "start_ind": 8917,
+    "end_ind": 8944
+  },
+  {
+    "text": "You go on back to Santa Fe",
+    "start_ind": 9588,
+    "end_ind": 9614
+  },
+  {
+    "text": "go to Texas",
+    "start_ind": 9619,
+    "end_ind": 9630
+  },
+  {
+    "text": "Go to Florida",
+    "start_ind": 9632,
+    "end_ind": 9645
+  },
+  {
+    "text": "get out of Denver",
+    "start_ind": 9673,
+    "end_ind": 9690
+  },
+  {
+    "text": "I drove up to Colfax",
+    "start_ind": 10373,
+    "end_ind": 10393
+  },
+  {
+    "text": "followed that east",
+    "start_ind": 10398,
+    "end_ind": 10416
+  },
+  {
+    "text": "I found a generic motel a few miles past Monaco Parkway",
+    "start_ind": 10424,
+    "end_ind": 10479
+  },
+  {
+    "text": "I hauled the computer into my room",
+    "start_ind": 10487,
+    "end_ind": 10521
+  },
+  {
+    "text": "I could go to the Bullring",
+    "start_ind": 14234,
+    "end_ind": 14260
+  },
+  {
+    "text": "or the Pink Adobe, over on the Old Santa Fe Trail",
+    "start_ind": 14261,
+    "end_ind": 14310
+  },
+  {
+    "text": "Or maybe stop by the Palace",
+    "start_ind": 14330,
+    "end_ind": 14357
+  },
+  {
+    "text": "I got up",
+    "start_ind": 14540,
+    "end_ind": 14548
+  },
+  {
+    "text": "crossed the tiny floor",
+    "start_ind": 14550,
+    "end_ind": 14572
+  },
+  {
+    "text": "May I come in",
+    "start_ind": 14813,
+    "end_ind": 14826
+  },
+  {
+    "text": "I stepped aside",
+    "start_ind": 14894,
+    "end_ind": 14909
+  },
+  {
+    "text": "let her pass",
+    "start_ind": 14913,
+    "end_ind": 14925
+  },
+  {
+    "text": "hurling me from one cramped room to another",
+    "start_ind": 15652,
+    "end_ind": 15695
+  },
+  {
+    "text": "drove the Jeep into the circular driveway",
+    "start_ind": 16349,
+    "end_ind": 16390
+  },
+  {
+    "text": "I climbed up the flagstone walk",
+    "start_ind": 16419,
+    "end_ind": 16450
+  },
+  {
+    "text": "up the flagstone stairway",
+    "start_ind": 16452,
+    "end_ind": 16477
+  },
+  {
+    "text": "someone moving toward me",
+    "start_ind": 16787,
+    "end_ind": 16811
+  },
+  {
+    "text": "the lady of the manor appeared",
+    "start_ind": 16875,
+    "end_ind": 16905
+  },
+  {
+    "text": "Please come in",
+    "start_ind": 18072,
+    "end_ind": 18086
+  },
+  {
+    "text": "I stepped into the foyer",
+    "start_ind": 18144,
+    "end_ind": 18168
+  },
+  {
+    "text": "I followed her along the edge of a living room",
+    "start_ind": 18378,
+    "end_ind": 18424
+  },
+  {
+    "text": "The policeman who came here",
+    "start_ind": 18782,
+    "end_ind": 18809
+  },
+  {
+    "text": "We came to a broad balustraded stairway",
+    "start_ind": 18902,
+    "end_ind": 18941
+  },
+  {
+    "text": "we’ve got some people coming over tonight",
+    "start_ind": 19057,
+    "end_ind": 19098
+  },
+  {
+    "text": "I’ll try to be out of here",
+    "start_ind": 19413,
+    "end_ind": 19439
+  },
+  {
+    "text": "At the end of the long hallway, I knocked on the door to my left",
+    "start_ind": 19660,
+    "end_ind": 19724
+  },
+  {
+    "text": "Come on in",
+    "start_ind": 20358,
+    "end_ind": 20368
+  },
+  {
+    "text": "I stepped into a small parlor",
+    "start_ind": 20372,
+    "end_ind": 20401
+  }
+]

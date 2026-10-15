@@ -257,6 +257,9 @@ def main():
     ap.add_argument("--text_dir", required=True, help="folder with <name>.txt files")
     ap.add_argument("--ann_dir", default=None, help="folder with <name>.json files (default: same as --text_dir)")
     ap.add_argument("--out_dir", default="data")
+    ap.add_argument("--ann_prefix", default="consensus_final_", help="stripped from annotation file names to get the text name")
+    ap.add_argument("--text_suffix", default="_excerpt", help="stripped from text file names to get the text name")
+    ap.add_argument("--name_map", default=None, help='optional JSON {"annotation_name": "text_name"} for names that do not line up')
     ap.add_argument("--encoding", default="utf-8")
     ap.add_argument("--text_key", default="text")
     ap.add_argument("--start_key", default="start_ind")
@@ -277,14 +280,38 @@ def main():
 
     text_dir = Path(args.text_dir)
     ann_dir = Path(args.ann_dir) if args.ann_dir else text_dir
-    txts = {p.stem: p for p in sorted(text_dir.glob("*.txt"))}
-    jsons = {p.stem: p for p in sorted(ann_dir.glob("*.json"))}
+    def strip_affix(stem, prefix="", suffix=""):
+        if prefix and stem.startswith(prefix):
+            stem = stem[len(prefix):]
+        if suffix and stem.endswith(suffix):
+            stem = stem[: -len(suffix)]
+        return stem
+
+    txts = {strip_affix(p.stem, suffix=args.text_suffix): p for p in sorted(text_dir.glob("*.txt"))}
+    jsons = {strip_affix(p.stem, prefix=args.ann_prefix): p for p in sorted(ann_dir.glob("*.json"))}
+
+    # explicit overrides: {"annotation_name": "text_name"} (names after affix stripping)
+    name_map = json.loads(Path(args.name_map).read_text()) if args.name_map else {}
+    for ann_name, txt_name in name_map.items():
+        if ann_name in jsons and txt_name in txts:
+            txts[ann_name] = txts.pop(txt_name)
+    # fallback: an unmatched annotation name that is a prefix of exactly ONE unmatched text name
+    auto_matched = {}
+    for j in sorted(set(jsons) - set(txts)):
+        cands = [t for t in set(txts) - set(jsons) if t.startswith(j)]
+        if len(cands) == 1:
+            auto_matched[j] = cands[0]
+            txts[j] = txts.pop(cands[0])
+    if auto_matched:
+        print("NOTE: matched by name prefix (check these are right):", auto_matched)
+
     paired = sorted(set(txts) & set(jsons))
     unmatched = {"txt_without_json": sorted(set(txts) - set(jsons)), "json_without_txt": sorted(set(jsons) - set(txts))}
     if not paired:
-        raise SystemExit(f"no <name>.txt / <name>.json pairs found ({unmatched})")
+        raise SystemExit(f"no text/annotation pairs found ({unmatched})")
     if any(unmatched.values()):
-        print("WARNING: unmatched files ignored:", unmatched)
+        print("NOTE: unmatched files ignored:", unmatched)
+    print(f"{len(paired)} text/annotation pairs found")
 
     # ---- 1. validate each text -------------------------------------------
     books, text_reports, dropped_small = [], {}, []
@@ -307,6 +334,7 @@ def main():
     out_dir = Path(args.out_dir)
     report = {
         "unmatched_files": unmatched,
+        "matched_by_name_prefix": auto_matched,
         "texts_dropped_too_few_events": dropped_small,
         "texts": text_reports,
         "split_assignment": assignment,

@@ -1,0 +1,582 @@
+{
+  "unmatched_files": {
+    "txt_without_json": [
+      "aroundTheWorldInEightyDays",
+      "janeEyre",
+      "mobyDick",
+      "ofMiceAndMen",
+      "theDiamondLens",
+      "theMarkOfAthena",
+      "withTheBritishLegion"
+    ],
+    "json_without_txt": []
+  },
+  "matched_by_name_prefix": {
+    "murderOnTheYukon": "murderOnTheYukonQuest",
+    "tarzan": "tarzanTheTerrible"
+  },
+  "texts_dropped_too_few_events": [
+    "theFallOfTheHouseOfUsher"
+  ],
+  "texts": {
+    "accustomedToTheDark": {
+      "n_chars": 21200,
+      "n_annotations_raw": 60,
+      "unparseable_rows": 0,
+      "alignment": {
+        "relocated": 60
+      },
+      "dropped_too_long": 0,
+      "dropped_overlap": 0,
+      "n_events_used": 60,
+      "warning": "60 spans needed relocation (median shift 135.0): offsets may be systematically off (\\r\\n vs \\n, UTF-16/byte offsets, different text version)"
+    },
+    "allTheLightWeCannotSee": {
+      "n_chars": 20382,
+      "n_annotations_raw": 50,
+      "unparseable_rows": 0,
+      "alignment": {
+        "relocated": 50
+      },
+      "dropped_too_long": 0,
+      "dropped_overlap": 0,
+      "n_events_used": 50,
+      "warning": "50 spans needed relocation (median shift 135.0): offsets may be systematically off (\\r\\n vs \\n, UTF-16/byte offsets, different text version)"
+    },
+    "atlasShrugged": {
+      "n_chars": 15824,
+      "n_annotations_raw": 12,
+      "unparseable_rows": 0,
+      "alignment": {
+        "relocated": 12
+      },
+      "dropped_too_long": 0,
+      "dropped_overlap": 0,
+      "n_events_used": 12,
+      "warning": "12 spans needed relocation (median shift 39.0): offsets may be systematically off (\\r\\n vs \\n, UTF-16/byte offsets, different text version)"
+    },
+    "donQuixote": {
+      "n_chars": 14153,
+      "n_annotations_raw": 33,
+      "unparseable_rows": 0,
+      "alignment": {
+        "relocated": 23,
+        "failed": 10
+      },
+      "dropped_too_long": 0,
+      "dropped_overlap": 0,
+      "n_events_used": 23,
+      "warning": "23 spans needed relocation (median shift 147): offsets may be systematically off (\\r\\n vs \\n, UTF-16/byte offsets, different text version)"
+    },
+    "dorianGray": {
+      "n_chars": 13703,
+      "n_annotations_raw": 39,
+      "unparseable_rows": 0,
+      "alignment": {
+        "relocated": 27,
+        "failed": 12
+      },
+      "dropped_too_long": 0,
+      "dropped_overlap": 0,
+      "n_events_used": 27,
+      "warning": "27 spans needed relocation (median shift 195): offsets may be systematically off (\\r\\n vs \\n, UTF-16/byte offsets, different text version)"
+    },
+    "edgarHuntly": {
+      "n_chars": 24836,
+      "n_annotations_raw": 67,
+      "unparseable_rows": 0,
+      "alignment": {
+        "relocated": 41,
+        "failed": 26
+      },
+      "dropped_too_long": 0,
+      "dropped_overlap": 0,
+      "n_events_used": 41,
+      "warning": "41 spans needed relocation (median shift 175): offsets may be systematically off (\\r\\n vs \\n, UTF-16/byte offsets, different text version)"
+    },
+    "glimmering": {
+      "n_chars": 25527,
+      "n_annotations_raw": 44,
+      "unparseable_rows": 0,
+      "alignment": {
+        "relocated": 35,
+        "failed": 9
+      },
+      "dropped_too_long": 0,
+      "dropped_overlap": 0,
+      "n_events_used": 35,
+      "warning": "35 spans needed relocation (median shift 132): offsets may be systematically off (\\r\\n vs \\n, UTF-16/byte offsets, different text version)"
+    },
+    "gravitysRainbow": {
+      "n_chars": 16810,
+      "n_annotations_raw": 22,
+      "unparseable_rows": 0,
+      "alignment": {
+        "relocated": 22
+      },
+      "dropped_too_long": 0,
+      "dropped_overlap": 0,
+      "n_events_used": 22,
+      "warning": "22 spans needed relocation (median shift 16.0): offsets may be systematically off (\\r\\n vs \\n, UTF-16/byte offsets, different text version)"
+    },
+    "handAndRing": {
+      "n_chars": 10845,
+      "n_annotations_raw": 25,
+      "unparseable_rows": 0,
+      "alignment": {
+        "relocated": 15,
+        "failed": 10
+      },
+      "dropped_too_long": 0,
+      "dropped_overlap": 0,
+      "n_events_used": 15,
+      "warning": "15 spans needed relocation (median shift 176): offsets may be systematically off (\\r\\n vs \\n, UTF-16/byte offsets, different text version)"
+    },
+    "landOfDreams": {
+      "n_chars": 19212,
+      "n_annotations_raw": 35,
+      "unparseable_rows": 0,
+      "alignment": {
+        "relocated": 35
+      },
+      "dropped_too_long": 0,
+      "dropped_overlap": 0,
+      "n_events_used": 35,
+      "warning": "35 spans needed relocation (median shift 64): offsets may be systematically off (\\r\\n vs \\n, UTF-16/byte offsets, different text version)"
+    },
+    "lifeOfPi": {
+      "n_chars": 32942,
+      "n_annotations_raw": 20,
+      "unparseable_rows": 0,
+      "alignment": {
+        "relocated": 9,
+        "failed": 11
+      },
+      "dropped_too_long": 0,
+      "dropped_overlap": 0,
+      "n_events_used": 9,
+      "warning": "9 spans needed relocation (median shift 26): offsets may be systematically off (\\r\\n vs \\n, UTF-16/byte offsets, different text version)"
+    },
+    "liveFreeOrDie": {
+      "n_chars": 23380,
+      "n_annotations_raw": 30,
+      "unparseable_rows": 0,
+      "alignment": {
+        "relocated": 28,
+        "failed": 2
+      },
+      "dropped_too_long": 0,
+      "dropped_overlap": 0,
+      "n_events_used": 28,
+      "warning": "28 spans needed relocation (median shift 144.0): offsets may be systematically off (\\r\\n vs \\n, UTF-16/byte offsets, different text version)"
+    },
+    "messiah": {
+      "n_chars": 16399,
+      "n_annotations_raw": 23,
+      "unparseable_rows": 0,
+      "alignment": {
+        "relocated": 23
+      },
+      "dropped_too_long": 0,
+      "dropped_overlap": 0,
+      "n_events_used": 23,
+      "warning": "23 spans needed relocation (median shift 74): offsets may be systematically off (\\r\\n vs \\n, UTF-16/byte offsets, different text version)"
+    },
+    "miracleOn34thStreet": {
+      "n_chars": 11637,
+      "n_annotations_raw": 23,
+      "unparseable_rows": 0,
+      "alignment": {
+        "relocated": 23
+      },
+      "dropped_too_long": 0,
+      "dropped_overlap": 0,
+      "n_events_used": 23,
+      "warning": "23 spans needed relocation (median shift 92): offsets may be systematically off (\\r\\n vs \\n, UTF-16/byte offsets, different text version)"
+    },
+    "mizora": {
+      "n_chars": 14536,
+      "n_annotations_raw": 20,
+      "unparseable_rows": 0,
+      "alignment": {
+        "relocated": 10,
+        "failed": 10
+      },
+      "dropped_too_long": 0,
+      "dropped_overlap": 0,
+      "n_events_used": 10,
+      "warning": "10 spans needed relocation (median shift 133.5): offsets may be systematically off (\\r\\n vs \\n, UTF-16/byte offsets, different text version)"
+    },
+    "murderOnTheYukon": {
+      "n_chars": 25155,
+      "n_annotations_raw": 53,
+      "unparseable_rows": 0,
+      "alignment": {
+        "relocated": 53
+      },
+      "dropped_too_long": 0,
+      "dropped_overlap": 0,
+      "n_events_used": 53,
+      "warning": "53 spans needed relocation (median shift 44): offsets may be systematically off (\\r\\n vs \\n, UTF-16/byte offsets, different text version)"
+    },
+    "pattyFairfield": {
+      "n_chars": 16363,
+      "n_annotations_raw": 74,
+      "unparseable_rows": 0,
+      "alignment": {
+        "relocated": 48,
+        "failed": 26
+      },
+      "dropped_too_long": 0,
+      "dropped_overlap": 0,
+      "n_events_used": 48,
+      "warning": "48 spans needed relocation (median shift 129.0): offsets may be systematically off (\\r\\n vs \\n, UTF-16/byte offsets, different text version)"
+    },
+    "perfumeOfParadise": {
+      "n_chars": 29884,
+      "n_annotations_raw": 63,
+      "unparseable_rows": 0,
+      "alignment": {
+        "relocated": 63
+      },
+      "dropped_too_long": 0,
+      "dropped_overlap": 0,
+      "n_events_used": 63,
+      "warning": "63 spans needed relocation (median shift 102): offsets may be systematically off (\\r\\n vs \\n, UTF-16/byte offsets, different text version)"
+    },
+    "stoneQuarry": {
+      "n_chars": 12069,
+      "n_annotations_raw": 23,
+      "unparseable_rows": 0,
+      "alignment": {
+        "relocated": 23
+      },
+      "dropped_too_long": 0,
+      "dropped_overlap": 0,
+      "n_events_used": 23,
+      "warning": "23 spans needed relocation (median shift 17): offsets may be systematically off (\\r\\n vs \\n, UTF-16/byte offsets, different text version)"
+    },
+    "tarzan": {
+      "n_chars": 18430,
+      "n_annotations_raw": 83,
+      "unparseable_rows": 0,
+      "alignment": {
+        "relocated": 46,
+        "failed": 37
+      },
+      "dropped_too_long": 0,
+      "dropped_overlap": 0,
+      "n_events_used": 46,
+      "warning": "46 spans needed relocation (median shift 131.0): offsets may be systematically off (\\r\\n vs \\n, UTF-16/byte offsets, different text version)"
+    },
+    "theBodyBeautiful": {
+      "n_chars": 37493,
+      "n_annotations_raw": 51,
+      "unparseable_rows": 0,
+      "alignment": {
+        "relocated": 51
+      },
+      "dropped_too_long": 0,
+      "dropped_overlap": 0,
+      "n_events_used": 51,
+      "warning": "51 spans needed relocation (median shift 112): offsets may be systematically off (\\r\\n vs \\n, UTF-16/byte offsets, different text version)"
+    },
+    "theFallOfTheHouseOfUsher": {
+      "n_chars": 63281,
+      "n_annotations_raw": 44,
+      "unparseable_rows": 0,
+      "alignment": {
+        "failed": 41,
+        "relocated": 3
+      },
+      "dropped_too_long": 0,
+      "dropped_overlap": 0,
+      "n_events_used": 3
+    },
+    "theGreatGatsby": {
+      "n_chars": 12042,
+      "n_annotations_raw": 33,
+      "unparseable_rows": 0,
+      "alignment": {
+        "failed": 12,
+        "relocated": 21
+      },
+      "dropped_too_long": 0,
+      "dropped_overlap": 0,
+      "n_events_used": 21,
+      "warning": "21 spans needed relocation (median shift 82): offsets may be systematically off (\\r\\n vs \\n, UTF-16/byte offsets, different text version)"
+    },
+    "theHobbit": {
+      "n_chars": 27834,
+      "n_annotations_raw": 103,
+      "unparseable_rows": 0,
+      "alignment": {
+        "relocated": 101,
+        "failed": 2
+      },
+      "dropped_too_long": 0,
+      "dropped_overlap": 0,
+      "n_events_used": 101,
+      "warning": "101 spans needed relocation (median shift 102): offsets may be systematically off (\\r\\n vs \\n, UTF-16/byte offsets, different text version)"
+    },
+    "theKiteRunner": {
+      "n_chars": 34644,
+      "n_annotations_raw": 32,
+      "unparseable_rows": 0,
+      "alignment": {
+        "relocated": 32
+      },
+      "dropped_too_long": 0,
+      "dropped_overlap": 0,
+      "n_events_used": 32,
+      "warning": "32 spans needed relocation (median shift 46.0): offsets may be systematically off (\\r\\n vs \\n, UTF-16/byte offsets, different text version)"
+    },
+    "theStand": {
+      "n_chars": 9813,
+      "n_annotations_raw": 26,
+      "unparseable_rows": 0,
+      "alignment": {
+        "relocated": 26
+      },
+      "dropped_too_long": 0,
+      "dropped_overlap": 0,
+      "n_events_used": 26,
+      "warning": "26 spans needed relocation (median shift 18.0): offsets may be systematically off (\\r\\n vs \\n, UTF-16/byte offsets, different text version)"
+    },
+    "theWomanWhoFellFromGrace": {
+      "n_chars": 28793,
+      "n_annotations_raw": 45,
+      "unparseable_rows": 0,
+      "alignment": {
+        "relocated": 45
+      },
+      "dropped_too_long": 0,
+      "dropped_overlap": 0,
+      "n_events_used": 45,
+      "warning": "45 spans needed relocation (median shift 93): offsets may be systematically off (\\r\\n vs \\n, UTF-16/byte offsets, different text version)"
+    },
+    "trailOfSecrets": {
+      "n_chars": 30627,
+      "n_annotations_raw": 40,
+      "unparseable_rows": 0,
+      "alignment": {
+        "relocated": 40
+      },
+      "dropped_too_long": 0,
+      "dropped_overlap": 0,
+      "n_events_used": 40,
+      "warning": "40 spans needed relocation (median shift 98.0): offsets may be systematically off (\\r\\n vs \\n, UTF-16/byte offsets, different text version)"
+    },
+    "treasureIsland": {
+      "n_chars": 28206,
+      "n_annotations_raw": 61,
+      "unparseable_rows": 0,
+      "alignment": {
+        "failed": 53,
+        "relocated": 8
+      },
+      "dropped_too_long": 0,
+      "dropped_overlap": 0,
+      "n_events_used": 8
+    },
+    "whenTrueNightFalls": {
+      "n_chars": 16166,
+      "n_annotations_raw": 17,
+      "unparseable_rows": 0,
+      "alignment": {
+        "relocated": 17
+      },
+      "dropped_too_long": 0,
+      "dropped_overlap": 0,
+      "n_events_used": 17,
+      "warning": "17 spans needed relocation (median shift 90): offsets may be systematically off (\\r\\n vs \\n, UTF-16/byte offsets, different text version)"
+    },
+    "wutheringHeights": {
+      "n_chars": 16360,
+      "n_annotations_raw": 56,
+      "unparseable_rows": 0,
+      "alignment": {
+        "failed": 23,
+        "relocated": 33
+      },
+      "dropped_too_long": 0,
+      "dropped_overlap": 0,
+      "n_events_used": 33,
+      "warning": "33 spans needed relocation (median shift 190): offsets may be systematically off (\\r\\n vs \\n, UTF-16/byte offsets, different text version)"
+    },
+    "youCantGoHomeAgain": {
+      "n_chars": 23414,
+      "n_annotations_raw": 29,
+      "unparseable_rows": 0,
+      "alignment": {
+        "relocated": 29
+      },
+      "dropped_too_long": 0,
+      "dropped_overlap": 0,
+      "n_events_used": 29,
+      "warning": "29 spans needed relocation (median shift 50): offsets may be systematically off (\\r\\n vs \\n, UTF-16/byte offsets, different text version)"
+    }
+  },
+  "split_assignment": {
+    "train": [
+      "donQuixote",
+      "perfumeOfParadise",
+      "accustomedToTheDark",
+      "gravitysRainbow",
+      "youCantGoHomeAgain",
+      "theWomanWhoFellFromGrace",
+      "trailOfSecrets",
+      "atlasShrugged",
+      "theBodyBeautiful",
+      "whenTrueNightFalls",
+      "glimmering",
+      "stoneQuarry",
+      "liveFreeOrDie",
+      "theKiteRunner",
+      "wutheringHeights",
+      "murderOnTheYukon",
+      "pattyFairfield",
+      "handAndRing",
+      "miracleOn34thStreet",
+      "theStand",
+      "messiah",
+      "treasureIsland"
+    ],
+    "val": [
+      "lifeOfPi",
+      "edgarHuntly",
+      "theGreatGatsby",
+      "dorianGray",
+      "landOfDreams",
+      "allTheLightWeCannotSee"
+    ],
+    "test": [
+      "tarzan",
+      "mizora",
+      "theHobbit"
+    ]
+  },
+  "splits": {
+    "train": {
+      "texts": [
+        "donQuixote",
+        "perfumeOfParadise",
+        "accustomedToTheDark",
+        "gravitysRainbow",
+        "youCantGoHomeAgain",
+        "theWomanWhoFellFromGrace",
+        "trailOfSecrets",
+        "atlasShrugged",
+        "theBodyBeautiful",
+        "whenTrueNightFalls",
+        "glimmering",
+        "stoneQuarry",
+        "liveFreeOrDie",
+        "theKiteRunner",
+        "wutheringHeights",
+        "murderOnTheYukon",
+        "pattyFairfield",
+        "handAndRing",
+        "miracleOn34thStreet",
+        "theStand",
+        "messiah",
+        "treasureIsland"
+      ],
+      "events": 709,
+      "task_a_examples": 709,
+      "task_b_examples": 2097,
+      "task_b_events_skipped": 10,
+      "mean_span_chars": 29.2
+    },
+    "val": {
+      "texts": [
+        "lifeOfPi",
+        "edgarHuntly",
+        "theGreatGatsby",
+        "dorianGray",
+        "landOfDreams",
+        "allTheLightWeCannotSee"
+      ],
+      "events": 183,
+      "task_a_examples": 183,
+      "task_b_examples": 178,
+      "task_b_events_skipped": 5,
+      "mean_span_chars": 27.8
+    },
+    "test": {
+      "texts": [
+        "tarzan",
+        "mizora",
+        "theHobbit"
+      ],
+      "events": 157,
+      "task_a_examples": 157,
+      "task_b_examples": 153,
+      "task_b_events_skipped": 4,
+      "mean_span_chars": 31.0
+    }
+  },
+  "task_b_baselines": {
+    "train": {
+      "chance": 0.25,
+      "longest_candidate_acc": 0.2518,
+      "appears_in_window_acc": 0.2511,
+      "label_distribution": {
+        "C": 525,
+        "B": 528,
+        "D": 531,
+        "A": 513
+      }
+    },
+    "val": {
+      "chance": 0.25,
+      "longest_candidate_acc": 0.1966,
+      "appears_in_window_acc": 0.25,
+      "label_distribution": {
+        "A": 47,
+        "D": 44,
+        "C": 41,
+        "B": 46
+      }
+    },
+    "test": {
+      "chance": 0.25,
+      "longest_candidate_acc": 0.1863,
+      "appears_in_window_acc": 0.25,
+      "label_distribution": {
+        "D": 36,
+        "B": 41,
+        "C": 48,
+        "A": 28
+      }
+    }
+  },
+  "task_b_distractor_fallbacks": 3,
+  "args": {
+    "text_dir": "corpus/texts",
+    "ann_dir": "corpus/annotations",
+    "out_dir": "lora/data",
+    "ann_prefix": "consensus_final_",
+    "text_suffix": "_excerpt",
+    "name_map": null,
+    "encoding": "utf-8",
+    "text_key": "text",
+    "start_key": "start_ind",
+    "end_key": "end_ind",
+    "split": [
+      0.7,
+      0.15,
+      0.15
+    ],
+    "split_file": null,
+    "min_events_per_text": 8,
+    "a_window": 600,
+    "b_window": 1200,
+    "min_context_chars": 150,
+    "max_span_chars": 200,
+    "b_draws_train": 3,
+    "distractors": "text",
+    "strict": false,
+    "seed": 0
+  }
+}
