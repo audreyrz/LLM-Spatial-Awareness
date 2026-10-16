@@ -12,6 +12,7 @@ import argparse
 import json
 import math
 import random
+import time
 from pathlib import Path
 
 import torch
@@ -76,6 +77,22 @@ def evaluate_loss(model, data, pad_id, bsz, use_amp, device):
     return out
 
 
+def make_batches(data, bsz, rng, by_length):
+    """Shuffled batches. With by_length, examples are sorted by length inside
+    chunks of bsz*32 so each batch has similar lengths (less padding = faster)."""
+    idx = list(range(len(data)))
+    rng.shuffle(idx)
+    if by_length:
+        chunk, out = bsz * 32, []
+        for i in range(0, len(idx), chunk):
+            c = sorted(idx[i : i + chunk], key=lambda k: len(data[k]["input_ids"]))
+            out += [c[j : j + bsz] for j in range(0, len(c), bsz)]
+        rng.shuffle(out)
+    else:
+        out = [idx[i : i + bsz] for i in range(0, len(idx), bsz)]
+    return [[data[k] for k in b] for b in out]
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--data_dir", default="data")
@@ -92,6 +109,13 @@ def main():
     ap.add_argument("--dropout", type=float, default=0.05)
     ap.add_argument("--warmup_frac", type=float, default=0.05)
     ap.add_argument("--seed", type=int, default=0)
+    # --- speed / small-sample options ---
+    ap.add_argument("--max_train", type=int, default=None, help="cap on train examples PER TASK (random sample)")
+    ap.add_argument("--max_val", type=int, default=None, help="cap on val examples PER TASK")
+    ap.add_argument("--lora_targets", choices=["all", "attn"], default="all",
+                    help="'attn' = q_proj,v_proj only (fewer adapter params, faster steps)")
+    ap.add_argument("--no_length_bucketing", action="store_true")
+    ap.add_argument("--log_every", type=int, default=10, help="print progress every N batches")
     args = ap.parse_args()
 
     random.seed(args.seed)
@@ -107,16 +131,19 @@ def main():
     if tok.pad_token is None:
         tok.pad_token = tok.eos_token
 
-    def load(split):
+    def load(split, cap):
         rows = []
         for t in args.tasks:
-            rows += read_jsonl(Path(args.data_dir) / f"task_{t.lower()}_{split}.jsonl")
+            r = read_jsonl(Path(args.data_dir) / f"task_{t.lower()}_{split}.jsonl")
+            if cap and len(r) > cap:
+                r = random.Random(args.seed).sample(r, cap)
+            rows += r
         enc = [encode(tok, r, args.max_len) for r in rows]
         dropped = sum(e is None for e in enc)
         return [e for e in enc if e is not None], dropped
 
-    train, d_tr = load("train")
-    val, d_va = load("val")
+    train, d_tr = load("train", args.max_train)
+    val, d_va = load("val", args.max_val)
     print(f"train={len(train)} (dropped {d_tr} too long)  val={len(val)} (dropped {d_va})")
     if not train or not val:
         raise SystemExit("empty train/val set")
@@ -126,7 +153,8 @@ def main():
         r=args.r,
         lora_alpha=args.alpha,
         lora_dropout=args.dropout,
-        target_modules=["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
+        target_modules=["q_proj", "v_proj"] if args.lora_targets == "attn"
+        else ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
         task_type="CAUSAL_LM",
     )
     model = get_peft_model(model, cfg)
@@ -139,6 +167,7 @@ def main():
     sched = get_cosine_schedule_with_warmup(opt, max(1, int(args.warmup_frac * total)), total)
 
     log = {"args": vars(args), "epochs": []}
+    val.sort(key=lambda e: len(e["input_ids"]))
     base_val = evaluate_loss(model.eval(), val, tok.pad_token_id, args.bsz, use_amp, device)
     print("val loss at init (adapter is identity):", base_val)
     log["val_loss_init"] = base_val
@@ -146,16 +175,19 @@ def main():
 
     for ep in range(1, args.epochs + 1):
         model.train()
-        random.shuffle(train)
-        run, n_run = 0.0, 0
-        for i in range(0, len(train), args.bsz):
-            batch = train[i : i + args.bsz]
+        batches = make_batches(train, args.bsz, random.Random(args.seed + ep), not args.no_length_bucketing)
+        run, n_run, t0 = 0.0, 0, time.time()
+        for bi, batch in enumerate(batches):
             ids, lab, att = collate(batch, tok.pad_token_id, device)
             loss = per_example_loss(model, ids, lab, att, use_amp, device).mean()
             (loss / args.grad_accum).backward()
             run += loss.item()
             n_run += 1
-            if n_run % args.grad_accum == 0 or i + args.bsz >= len(train):
+            if n_run % args.log_every == 0:
+                el = time.time() - t0
+                eta = el / (bi + 1) * (len(batches) - bi - 1)
+                print(f"  ep{ep} batch {bi + 1}/{len(batches)}  loss {run / n_run:.3f}  {el / (bi + 1):.2f}s/batch  eta {eta / 60:.1f}m", flush=True)
+            if n_run % args.grad_accum == 0 or bi + 1 == len(batches):
                 torch.nn.utils.clip_grad_norm_(params, 1.0)
                 opt.step()
                 sched.step()

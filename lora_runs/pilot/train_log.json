@@ -1,0 +1,61 @@
+{
+  "args": {
+    "data_dir": "lora/data",
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "out_dir": "/content/drive/MyDrive/lora_runs/pilot",
+    "tasks": [
+      "A",
+      "B"
+    ],
+    "epochs": 3,
+    "lr": 0.0002,
+    "bsz": 4,
+    "grad_accum": 4,
+    "max_len": 1536,
+    "r": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "warmup_frac": 0.05,
+    "seed": 0,
+    "max_train": null,
+    "max_val": null,
+    "lora_targets": "all",
+    "no_length_bucketing": false,
+    "log_every": 10
+  },
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 1.158483894862914,
+      "val_loss": {
+        "A": 3.2322214555219224,
+        "B": 0.4679808845472773,
+        "mean": 1.8501011700346
+      }
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.6344925899724735,
+      "val_loss": {
+        "A": 3.3101311443281953,
+        "B": 0.4894761329983084,
+        "mean": 1.899803638663252
+      }
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.35404647871009753,
+      "val_loss": {
+        "A": 3.6486401919458733,
+        "B": 0.6306259443752403,
+        "mean": 2.1396330681605567
+      }
+    }
+  ],
+  "val_loss_init": {
+    "A": 6.04561327715389,
+    "B": 0.7704522601339254,
+    "mean": 3.408032768643908
+  },
+  "best_epoch": 1
+}

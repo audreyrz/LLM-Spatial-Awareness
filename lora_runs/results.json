@@ -1,0 +1,672 @@
+{
+  "meta": {
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "adapter": "/content/drive/MyDrive/lora_runs/pilot/best",
+    "split": "test",
+    "n_examples": {
+      "A": 157,
+      "B": 153
+    },
+    "note": "Split by whole text. Task B = next ANNOTATED event, not necessarily next physical movement. Example-level CIs ignore within-text correlation; see per_text.",
+    "args": {
+      "data_dir": "lora/data",
+      "model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "adapter": "/content/drive/MyDrive/lora_runs/pilot/best",
+      "split": "test",
+      "tasks": [
+        "A",
+        "B"
+      ],
+      "conditions": [
+        "context",
+        "nocontext",
+        "shuffled"
+      ],
+      "bsz": 8,
+      "max_new_tokens": 32,
+      "n_boot": 2000,
+      "limit": null,
+      "seed": 0,
+      "out": "/content/drive/MyDrive/lora_runs/results.json",
+      "pred_out": "/content/drive/MyDrive/lora_runs/predictions.jsonl"
+    }
+  },
+  "results": {
+    "base": {
+      "context": {
+        "task_a": {
+          "n": 157,
+          "exact_match": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "normalized_match": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "token_f1": {
+            "mean": 0.04748003734979492,
+            "ci95": [
+              0.0323348635643361,
+              0.06597203353666793
+            ]
+          },
+          "per_text": {
+            "mizora": {
+              "n": 10,
+              "mean": 0.0
+            },
+            "tarzan": {
+              "n": 46,
+              "mean": 0.0
+            },
+            "theHobbit": {
+              "n": 101,
+              "mean": 0.0
+            }
+          }
+        },
+        "task_b": {
+          "n": 153,
+          "accuracy": {
+            "mean": 0.21568627450980393,
+            "ci95": [
+              0.1568627450980392,
+              0.2812091503267965
+            ]
+          },
+          "per_text": {
+            "mizora": {
+              "n": 9,
+              "mean": 0.3333333333333333
+            },
+            "tarzan": {
+              "n": 44,
+              "mean": 0.18181818181818182
+            },
+            "theHobbit": {
+              "n": 100,
+              "mean": 0.22
+            }
+          },
+          "chance": 0.25,
+          "pred_letter_distribution": {
+            "A": 141,
+            "B": 0,
+            "C": 1,
+            "D": 11
+          }
+        }
+      },
+      "nocontext": {
+        "task_a": {
+          "n": 157,
+          "exact_match": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "normalized_match": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "token_f1": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "per_text": {
+            "mizora": {
+              "n": 10,
+              "mean": 0.0
+            },
+            "tarzan": {
+              "n": 46,
+              "mean": 0.0
+            },
+            "theHobbit": {
+              "n": 101,
+              "mean": 0.0
+            }
+          }
+        },
+        "task_b": {
+          "n": 153,
+          "accuracy": {
+            "mean": 0.1830065359477124,
+            "ci95": [
+              0.12418300653594772,
+              0.24836601307189543
+            ]
+          },
+          "per_text": {
+            "mizora": {
+              "n": 9,
+              "mean": 0.1111111111111111
+            },
+            "tarzan": {
+              "n": 44,
+              "mean": 0.1590909090909091
+            },
+            "theHobbit": {
+              "n": 100,
+              "mean": 0.2
+            }
+          },
+          "chance": 0.25,
+          "pred_letter_distribution": {
+            "A": 153,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          }
+        }
+      },
+      "shuffled": {
+        "task_a": {
+          "n": 157,
+          "exact_match": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "normalized_match": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "token_f1": {
+            "mean": 0.028626184089226025,
+            "ci95": [
+              0.019357204618327205,
+              0.038595649647141565
+            ]
+          },
+          "per_text": {
+            "mizora": {
+              "n": 10,
+              "mean": 0.0
+            },
+            "tarzan": {
+              "n": 46,
+              "mean": 0.0
+            },
+            "theHobbit": {
+              "n": 101,
+              "mean": 0.0
+            }
+          }
+        },
+        "task_b": {
+          "n": 153,
+          "accuracy": {
+            "mean": 0.1830065359477124,
+            "ci95": [
+              0.12418300653594772,
+              0.24836601307189543
+            ]
+          },
+          "per_text": {
+            "mizora": {
+              "n": 9,
+              "mean": 0.2222222222222222
+            },
+            "tarzan": {
+              "n": 44,
+              "mean": 0.18181818181818182
+            },
+            "theHobbit": {
+              "n": 100,
+              "mean": 0.18
+            }
+          },
+          "chance": 0.25,
+          "pred_letter_distribution": {
+            "A": 141,
+            "B": 1,
+            "C": 0,
+            "D": 11
+          }
+        }
+      }
+    },
+    "lora": {
+      "context": {
+        "task_a": {
+          "n": 157,
+          "exact_match": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "normalized_match": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "token_f1": {
+            "mean": 0.12616301728328705,
+            "ci95": [
+              0.10269052915362394,
+              0.15107989568297733
+            ]
+          },
+          "per_text": {
+            "mizora": {
+              "n": 10,
+              "mean": 0.0
+            },
+            "tarzan": {
+              "n": 46,
+              "mean": 0.0
+            },
+            "theHobbit": {
+              "n": 101,
+              "mean": 0.0
+            }
+          }
+        },
+        "task_b": {
+          "n": 153,
+          "accuracy": {
+            "mean": 0.7516339869281046,
+            "ci95": [
+              0.6797385620915033,
+              0.8169934640522876
+            ]
+          },
+          "per_text": {
+            "mizora": {
+              "n": 9,
+              "mean": 0.6666666666666666
+            },
+            "tarzan": {
+              "n": 44,
+              "mean": 0.8409090909090909
+            },
+            "theHobbit": {
+              "n": 100,
+              "mean": 0.72
+            }
+          },
+          "chance": 0.25,
+          "pred_letter_distribution": {
+            "A": 32,
+            "B": 32,
+            "C": 51,
+            "D": 38
+          }
+        }
+      },
+      "nocontext": {
+        "task_a": {
+          "n": 157,
+          "exact_match": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "normalized_match": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "token_f1": {
+            "mean": 0.08378331915039927,
+            "ci95": [
+              0.06903610643742225,
+              0.09995466345030543
+            ]
+          },
+          "per_text": {
+            "mizora": {
+              "n": 10,
+              "mean": 0.0
+            },
+            "tarzan": {
+              "n": 46,
+              "mean": 0.0
+            },
+            "theHobbit": {
+              "n": 101,
+              "mean": 0.0
+            }
+          }
+        },
+        "task_b": {
+          "n": 153,
+          "accuracy": {
+            "mean": 0.28104575163398693,
+            "ci95": [
+              0.21568627450980393,
+              0.35294117647058826
+            ]
+          },
+          "per_text": {
+            "mizora": {
+              "n": 9,
+              "mean": 0.3333333333333333
+            },
+            "tarzan": {
+              "n": 44,
+              "mean": 0.25
+            },
+            "theHobbit": {
+              "n": 100,
+              "mean": 0.29
+            }
+          },
+          "chance": 0.25,
+          "pred_letter_distribution": {
+            "A": 39,
+            "B": 5,
+            "C": 85,
+            "D": 24
+          }
+        }
+      },
+      "shuffled": {
+        "task_a": {
+          "n": 157,
+          "exact_match": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "normalized_match": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "token_f1": {
+            "mean": 0.060606889259942835,
+            "ci95": [
+              0.04400501137012939,
+              0.07779523484820412
+            ]
+          },
+          "per_text": {
+            "mizora": {
+              "n": 10,
+              "mean": 0.0
+            },
+            "tarzan": {
+              "n": 46,
+              "mean": 0.0
+            },
+            "theHobbit": {
+              "n": 101,
+              "mean": 0.0
+            }
+          }
+        },
+        "task_b": {
+          "n": 153,
+          "accuracy": {
+            "mean": 0.22875816993464052,
+            "ci95": [
+              0.16339869281045752,
+              0.29411764705882354
+            ]
+          },
+          "per_text": {
+            "mizora": {
+              "n": 9,
+              "mean": 0.0
+            },
+            "tarzan": {
+              "n": 44,
+              "mean": 0.36363636363636365
+            },
+            "theHobbit": {
+              "n": 100,
+              "mean": 0.19
+            }
+          },
+          "chance": 0.25,
+          "pred_letter_distribution": {
+            "A": 30,
+            "B": 26,
+            "C": 44,
+            "D": 53
+          }
+        }
+      }
+    }
+  },
+  "contrasts": {
+    "task_a.exact_match": {
+      "context_gain_base": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "context_gain_lora": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "adaptation_effect_context": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "interaction_vs_nocontext": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "adaptation_effect_nocontext": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "interaction_vs_shuffled": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "adaptation_effect_shuffled": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "task_a.normalized_match": {
+      "context_gain_base": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "context_gain_lora": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "adaptation_effect_context": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "interaction_vs_nocontext": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "adaptation_effect_nocontext": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "interaction_vs_shuffled": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "adaptation_effect_shuffled": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "task_a.token_f1": {
+      "context_gain_base": {
+        "estimate": 0.04748003734979492,
+        "ci95": [
+          0.03236823704084125,
+          0.06599038614411146
+        ]
+      },
+      "context_gain_lora": {
+        "estimate": 0.04237969813288778,
+        "ci95": [
+          0.015491520579851998,
+          0.06882229231217858
+        ]
+      },
+      "adaptation_effect_context": {
+        "estimate": 0.07868297993349213,
+        "ci95": [
+          0.04888292397465424,
+          0.10738944239736839
+        ]
+      },
+      "interaction_vs_nocontext": {
+        "estimate": -0.00510033921690714,
+        "ci95": [
+          -0.03687038558730112,
+          0.026693619364961438
+        ]
+      },
+      "adaptation_effect_nocontext": {
+        "estimate": 0.08378331915039927,
+        "ci95": [
+          0.06745487450587181,
+          0.09970873999264042
+        ]
+      },
+      "interaction_vs_shuffled": {
+        "estimate": 0.04670227476277532,
+        "ci95": [
+          0.01450510182332689,
+          0.07734514036062493
+        ]
+      },
+      "adaptation_effect_shuffled": {
+        "estimate": 0.031980705170716814,
+        "ci95": [
+          0.013747411743831626,
+          0.05171069961164122
+        ]
+      }
+    },
+    "task_b.accuracy": {
+      "context_gain_base": {
+        "estimate": 0.032679738562091526,
+        "ci95": [
+          0.0,
+          0.06535947712418302
+        ]
+      },
+      "context_gain_lora": {
+        "estimate": 0.47058823529411764,
+        "ci95": [
+          0.38562091503267976,
+          0.5555555555555556
+        ]
+      },
+      "adaptation_effect_context": {
+        "estimate": 0.5359477124183006,
+        "ci95": [
+          0.43137254901960786,
+          0.6274509803921569
+        ]
+      },
+      "interaction_vs_nocontext": {
+        "estimate": 0.43790849673202614,
+        "ci95": [
+          0.3529411764705882,
+          0.5228758169934642
+        ]
+      },
+      "adaptation_effect_nocontext": {
+        "estimate": 0.09803921568627452,
+        "ci95": [
+          0.0,
+          0.19607843137254902
+        ]
+      },
+      "interaction_vs_shuffled": {
+        "estimate": 0.4901960784313726,
+        "ci95": [
+          0.39869281045751637,
+          0.5751633986928104
+        ]
+      },
+      "adaptation_effect_shuffled": {
+        "estimate": 0.04575163398692811,
+        "ci95": [
+          -0.04591503267973856,
+          0.1374183006535939
+        ]
+      }
+    }
+  }
+}
