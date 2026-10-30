@@ -93,10 +93,16 @@ def user_prompt(ex: dict, condition: str = "context", donor: dict = None) -> str
 
 
 def build_prompt_text(tokenizer, ex, condition="context", donor=None) -> str:
-    messages = [{"role": "user", "content": user_prompt(ex, condition, donor)}]
-    return tokenizer.apply_chat_template(
-        messages, tokenize=False, add_generation_prompt=True
-    )
+    content = user_prompt(ex, condition, donor)
+    # Instruct models (e.g. Qwen) use their native chat format. Base models
+    # such as Pythia have no chat template, so train and evaluate on the same
+    # plain-text continuation prompt instead.
+    if getattr(tokenizer, "chat_template", None):
+        messages = [{"role": "user", "content": content}]
+        return tokenizer.apply_chat_template(
+            messages, tokenize=False, add_generation_prompt=True
+        )
+    return content.rstrip() + "\n"
 
 
 def answer_text(ex: dict) -> str:

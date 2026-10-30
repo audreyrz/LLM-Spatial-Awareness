@@ -93,6 +93,29 @@ def make_batches(data, bsz, rng, by_length):
     return [[data[k] for k in b] for b in out]
 
 
+def get_lora_target_modules(model, mode):
+    """Return PEFT module suffixes for the selected architecture and scope."""
+    if getattr(model.config, "model_type", None) == "gpt_neox":
+        # Pythia uses GPT-NeoX with fused QKV attention projections.
+        targets = ["query_key_value"] if mode == "attn" else [
+            "query_key_value", "dense", "dense_h_to_4h", "dense_4h_to_h"
+        ]
+    else:
+        targets = ["q_proj", "v_proj"] if mode == "attn" else [
+            "q_proj", "k_proj", "v_proj", "o_proj",
+            "gate_proj", "up_proj", "down_proj",
+        ]
+    present = {name.rsplit(".", 1)[-1] for name, _ in model.named_modules()}
+    missing = [name for name in targets if name not in present]
+    if missing:
+        raise ValueError(
+            f"LoRA targets {missing} were not found in model type "
+            f"{getattr(model.config, 'model_type', 'unknown')}; choose a supported architecture "
+            "or update get_lora_target_modules()."
+        )
+    return targets
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--data_dir", default="data")
@@ -149,12 +172,13 @@ def main():
         raise SystemExit("empty train/val set")
 
     model = AutoModelForCausalLM.from_pretrained(args.model, torch_dtype=dtype).to(device)
+    target_modules = get_lora_target_modules(model, args.lora_targets)
+    print(f"LoRA target modules: {target_modules}")
     cfg = LoraConfig(
         r=args.r,
         lora_alpha=args.alpha,
         lora_dropout=args.dropout,
-        target_modules=["q_proj", "v_proj"] if args.lora_targets == "attn"
-        else ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
+        target_modules=target_modules,
         task_type="CAUSAL_LM",
     )
     model = get_peft_model(model, cfg)
