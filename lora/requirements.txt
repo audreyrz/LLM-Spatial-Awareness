@@ -2,3 +2,6 @@ torch
 transformers>=4.44
 peft>=0.12
 numpy
+datasets
+# Hugging Face Hub's httpx2 Brotli decoder needs output_buffer_limit support.
+brotlicffi>=1.2.0.2
