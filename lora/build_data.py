@@ -85,8 +85,10 @@ def align(text, a, reloc_window=300):
 
 def prepare_text(name, txt_path, json_path, args):
     """Validate one text. Returns dict(name, text, events, report) or None."""
-    # newline="" preserves \r\n so offsets are not silently shifted
-    with open(txt_path, encoding=args.encoding, newline="") as f:
+    # Annotation offsets were created against LF-normalized text. Use Python's
+    # universal-newline handling so CRLF files are normalized before offsets
+    # are applied; otherwise offset drift grows with every line break.
+    with open(txt_path, encoding=args.encoding) as f:
         text = f.read()
     raw, bad_rows = load_annotations(json_path, args.text_key, args.start_key, args.end_key)
 

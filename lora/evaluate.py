@@ -121,6 +121,9 @@ def main():
 
     rng = np.random.default_rng(args.seed)
     device, dtype = pick_device_dtype()
+    if device == "mps" and args.bsz > 1:
+        print(f"MPS detected; reducing evaluation batch size from {args.bsz} to 1 to limit memory use")
+        args.bsz = 1
     tok = AutoTokenizer.from_pretrained(args.model)
     tok.padding_side = "left"
     if tok.pad_token is None:

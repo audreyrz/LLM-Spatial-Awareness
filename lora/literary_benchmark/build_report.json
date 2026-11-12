@@ -1,0 +1,370 @@
+{
+  "offset_alignment": {
+    "accustomedToTheDark": {
+      "counts": {
+        "exact": 60
+      },
+      "unparseable": 0,
+      "dropped_overlaps": 0
+    },
+    "allTheLightWeCannotSee": {
+      "counts": {
+        "exact": 49,
+        "relocated": 1
+      },
+      "unparseable": 0,
+      "dropped_overlaps": 0
+    },
+    "atlasShrugged": {
+      "counts": {
+        "exact": 12
+      },
+      "unparseable": 0,
+      "dropped_overlaps": 0
+    },
+    "donQuixote": {
+      "counts": {
+        "exact": 33
+      },
+      "unparseable": 0,
+      "dropped_overlaps": 0
+    },
+    "dorianGray": {
+      "counts": {
+        "exact": 38,
+        "relocated": 1
+      },
+      "unparseable": 0,
+      "dropped_overlaps": 0
+    },
+    "edgarHuntly": {
+      "counts": {
+        "exact": 61,
+        "relocated": 6
+      },
+      "unparseable": 0,
+      "dropped_overlaps": 0
+    },
+    "glimmering": {
+      "counts": {
+        "exact": 44
+      },
+      "unparseable": 0,
+      "dropped_overlaps": 0
+    },
+    "gravitysRainbow": {
+      "counts": {
+        "exact": 20,
+        "relocated": 2
+      },
+      "unparseable": 0,
+      "dropped_overlaps": 0
+    },
+    "handAndRing": {
+      "counts": {
+        "exact": 25
+      },
+      "unparseable": 0,
+      "dropped_overlaps": 0
+    },
+    "landOfDreams": {
+      "counts": {
+        "exact": 34,
+        "relocated": 1
+      },
+      "unparseable": 0,
+      "dropped_overlaps": 0
+    },
+    "lifeOfPi": {
+      "counts": {
+        "exact": 20
+      },
+      "unparseable": 0,
+      "dropped_overlaps": 0
+    },
+    "liveFreeOrDie": {
+      "counts": {
+        "exact": 30
+      },
+      "unparseable": 0,
+      "dropped_overlaps": 0
+    },
+    "messiah": {
+      "counts": {
+        "exact": 19,
+        "relocated": 4
+      },
+      "unparseable": 0,
+      "dropped_overlaps": 0
+    },
+    "miracleOn34thStreet": {
+      "counts": {
+        "exact": 23
+      },
+      "unparseable": 0,
+      "dropped_overlaps": 0
+    },
+    "mizora": {
+      "counts": {
+        "exact": 19,
+        "relocated": 1
+      },
+      "unparseable": 0,
+      "dropped_overlaps": 0
+    },
+    "murderOnTheYukon": {
+      "counts": {
+        "exact": 52,
+        "relocated": 1
+      },
+      "unparseable": 0,
+      "dropped_overlaps": 0
+    },
+    "pattyFairfield": {
+      "counts": {
+        "exact": 74
+      },
+      "unparseable": 0,
+      "dropped_overlaps": 0
+    },
+    "perfumeOfParadise": {
+      "counts": {
+        "exact": 63
+      },
+      "unparseable": 0,
+      "dropped_overlaps": 0
+    },
+    "stoneQuarry": {
+      "counts": {
+        "exact": 22,
+        "relocated": 1
+      },
+      "unparseable": 0,
+      "dropped_overlaps": 0
+    },
+    "tarzan": {
+      "counts": {
+        "exact": 78,
+        "relocated": 5
+      },
+      "unparseable": 0,
+      "dropped_overlaps": 0
+    },
+    "theBodyBeautiful": {
+      "counts": {
+        "exact": 51
+      },
+      "unparseable": 0,
+      "dropped_overlaps": 0
+    },
+    "theFallOfTheHouseOfUsher": {
+      "counts": {
+        "relocated": 44
+      },
+      "unparseable": 0,
+      "dropped_overlaps": 0
+    },
+    "theGreatGatsby": {
+      "counts": {
+        "exact": 32,
+        "relocated": 1
+      },
+      "unparseable": 0,
+      "dropped_overlaps": 0
+    },
+    "theHobbit": {
+      "counts": {
+        "exact": 102,
+        "relocated": 1
+      },
+      "unparseable": 0,
+      "dropped_overlaps": 0
+    },
+    "theKiteRunner": {
+      "counts": {
+        "exact": 32
+      },
+      "unparseable": 0,
+      "dropped_overlaps": 0
+    },
+    "theStand": {
+      "counts": {
+        "exact": 23,
+        "relocated": 3
+      },
+      "unparseable": 0,
+      "dropped_overlaps": 0
+    },
+    "theWomanWhoFellFromGrace": {
+      "counts": {
+        "exact": 45
+      },
+      "unparseable": 0,
+      "dropped_overlaps": 0
+    },
+    "trailOfSecrets": {
+      "counts": {
+        "exact": 40
+      },
+      "unparseable": 0,
+      "dropped_overlaps": 0
+    },
+    "treasureIsland": {
+      "counts": {
+        "relocated": 61
+      },
+      "unparseable": 0,
+      "dropped_overlaps": 0
+    },
+    "whenTrueNightFalls": {
+      "counts": {
+        "exact": 17
+      },
+      "unparseable": 0,
+      "dropped_overlaps": 0
+    },
+    "wutheringHeights": {
+      "counts": {
+        "exact": 53,
+        "relocated": 3
+      },
+      "unparseable": 0,
+      "dropped_overlaps": 0
+    },
+    "youCantGoHomeAgain": {
+      "counts": {
+        "exact": 29
+      },
+      "unparseable": 0,
+      "dropped_overlaps": 0
+    }
+  },
+  "skipped": {},
+  "seed": 17,
+  "split_by_novel": {
+    "train": [
+      "accustomedToTheDark",
+      "allTheLightWeCannotSee",
+      "atlasShrugged",
+      "donQuixote",
+      "dorianGray",
+      "edgarHuntly",
+      "glimmering",
+      "gravitysRainbow",
+      "handAndRing",
+      "landOfDreams",
+      "lifeOfPi",
+      "liveFreeOrDie",
+      "messiah",
+      "miracleOn34thStreet",
+      "murderOnTheYukon",
+      "perfumeOfParadise",
+      "stoneQuarry",
+      "theBodyBeautiful",
+      "theFallOfTheHouseOfUsher",
+      "theGreatGatsby",
+      "theKiteRunner",
+      "theStand",
+      "theWomanWhoFellFromGrace",
+      "whenTrueNightFalls",
+      "wutheringHeights",
+      "youCantGoHomeAgain"
+    ],
+    "test": [
+      "mizora",
+      "pattyFairfield",
+      "tarzan",
+      "theHobbit",
+      "trailOfSecrets",
+      "treasureIsland"
+    ]
+  },
+  "counts": {
+    "random_train": {
+      "questions": 955,
+      "novels": [
+        "accustomedToTheDark",
+        "allTheLightWeCannotSee",
+        "atlasShrugged",
+        "donQuixote",
+        "dorianGray",
+        "edgarHuntly",
+        "glimmering",
+        "gravitysRainbow",
+        "handAndRing",
+        "landOfDreams",
+        "lifeOfPi",
+        "liveFreeOrDie",
+        "messiah",
+        "miracleOn34thStreet",
+        "murderOnTheYukon",
+        "perfumeOfParadise",
+        "stoneQuarry",
+        "theBodyBeautiful",
+        "theFallOfTheHouseOfUsher",
+        "theGreatGatsby",
+        "theKiteRunner",
+        "theStand",
+        "theWomanWhoFellFromGrace",
+        "whenTrueNightFalls",
+        "wutheringHeights",
+        "youCantGoHomeAgain"
+      ]
+    },
+    "random_test": {
+      "questions": 381,
+      "novels": [
+        "mizora",
+        "pattyFairfield",
+        "tarzan",
+        "theHobbit",
+        "trailOfSecrets",
+        "treasureIsland"
+      ]
+    },
+    "hard_train": {
+      "questions": 955,
+      "novels": [
+        "accustomedToTheDark",
+        "allTheLightWeCannotSee",
+        "atlasShrugged",
+        "donQuixote",
+        "dorianGray",
+        "edgarHuntly",
+        "glimmering",
+        "gravitysRainbow",
+        "handAndRing",
+        "landOfDreams",
+        "lifeOfPi",
+        "liveFreeOrDie",
+        "messiah",
+        "miracleOn34thStreet",
+        "murderOnTheYukon",
+        "perfumeOfParadise",
+        "stoneQuarry",
+        "theBodyBeautiful",
+        "theFallOfTheHouseOfUsher",
+        "theGreatGatsby",
+        "theKiteRunner",
+        "theStand",
+        "theWomanWhoFellFromGrace",
+        "whenTrueNightFalls",
+        "wutheringHeights",
+        "youCantGoHomeAgain"
+      ]
+    },
+    "hard_test": {
+      "questions": 381,
+      "novels": [
+        "mizora",
+        "pattyFairfield",
+        "tarzan",
+        "theHobbit",
+        "trailOfSecrets",
+        "treasureIsland"
+      ]
+    }
+  },
+  "source": "corpus/annotations/consensus_final_*.json and corpus/texts/*_excerpt.txt",
+  "note": "Hard distractors prioritize sentences with action/spatial cues; sentences overlapping any annotated span are excluded."
+}

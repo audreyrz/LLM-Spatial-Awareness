@@ -1,1 +1,19 @@
 .DS_Store
+/corpus
+
+# Local editor and Python artifacts
+/.vscode/
+__pycache__/
+*.py[cod]
+
+# Fine-tuning checkpoints and generated auxiliary datasets
+/lora/runs/
+/lora_runs/
+/lora/data_lf/
+
+# Local evaluation outputs and debug dumps
+/lora/*predictions*.jsonl
+**/*results*.json
+/lora/literary_benchmark/*.jsonl
+/lora/laya_debug.json
+/lora/laya_debug.jsonl
