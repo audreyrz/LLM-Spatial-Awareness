@@ -9,7 +9,8 @@ from pathlib import Path
 from common import LETTERS, pick_device_dtype, read_jsonl
 
 
-def prompt(row, demonstrations=()):
+def prompt(row, demonstrations=(), choices=None):
+    choices = choices or row["choices"]
     shots = ""
     if demonstrations:
         shots = "\n\nExamples:\n" + "\n\n".join(
@@ -19,7 +20,7 @@ def prompt(row, demonstrations=()):
     return (
         "Read the passage and choose the candidate that is an annotated movement span in the narrative. "
         "Reply with one letter only: A, B, C, or D.\n" + shots + "\n\nPassage:\n" + row["passage"] +
-        "\n\nCandidates:\n" + "\n".join(f"{L}. {c}" for L,c in zip(LETTERS,row["choices"])) + "\nAnswer:"
+        "\n\nCandidates:\n" + "\n".join(f"{L}. {c}" for L,c in zip(LETTERS,choices)) + "\nAnswer:"
     )
 
 
@@ -59,12 +60,18 @@ def main():
         if tok.pad_token is None: tok.pad_token = tok.eos_token
     results, summaries = [], defaultdict(lambda: {"n": 0, "correct": 0, "parse_failures": 0, "by_novel": defaultdict(lambda: [0,0])})
     for row in rows:
+        # Randomize displayed option order on every run and score against the
+        # corresponding remapped answer letter.
+        import random
+        order = list(range(len(LETTERS)))
+        random.Random(f"{args.seed}:{row['id']}").shuffle(order)
+        choices = [row["choices"][i] for i in order]
+        gold_letter = LETTERS[order.index(row["answer_index"])]
         if args.model == "random":
-            import random
             pred = random.Random(f"{args.seed}:{row['id']}").choice(LETTERS)
             response = pred
         else:
-            text = prompt(row, demos)
+            text = prompt(row, demos, choices)
             if getattr(tok, "chat_template", None):
                 text = tok.apply_chat_template([{"role":"user", "content":text}], tokenize=False, add_generation_prompt=True)
             inputs = tok(text, return_tensors="pt").to(device)
@@ -72,10 +79,10 @@ def main():
                 out = model.generate(**inputs, max_new_tokens=4, do_sample=False, pad_token_id=tok.pad_token_id)
             response = tok.decode(out[0, inputs["input_ids"].shape[1]:], skip_special_tokens=True)
             pred = parse_answer(response)
-        correct = pred == row["answer"]
+        correct = pred == gold_letter
         results.append({"id":row["id"], "source_novel":row["source_novel"], "distractor_type":row["distractor_type"],
-                        "prediction":pred, "gold":row["answer"], "correct":correct, "response":response,
-                        "gold_span":row["gold_span"], "choices":row["choices"]})
+                        "prediction":pred, "gold":gold_letter, "correct":correct, "response":response,
+                        "gold_span":row["gold_span"], "choices":choices})
         s = summaries[row["distractor_type"]]; s["n"] += 1; s["correct"] += int(correct); s["parse_failures"] += int(pred is None)
         s["by_novel"][row["source_novel"]][0] += int(correct); s["by_novel"][row["source_novel"]][1] += 1
     Path(args.out).parent.mkdir(parents=True, exist_ok=True)

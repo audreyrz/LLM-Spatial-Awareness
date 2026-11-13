@@ -71,19 +71,28 @@ def run_task_a(model, tok, examples, donors, condition, bsz, max_new, device):
 
 
 @torch.no_grad()
-def run_task_b(model, tok, examples, donors, condition, bsz, device):
+def run_task_b(model, tok, examples, donors, condition, bsz, device, seed=0):
     letter_ids = []
     for L in LETTERS:
         ids = tok.encode(L, add_special_tokens=False)
         assert len(ids) == 1, f"letter {L} is not a single token for this tokenizer"
         letter_ids.append(ids[0])
     preds = []
+    # Reorder candidate text per evaluation seed, then map the winning display
+    # letter back to the source label. This prevents a fixed answer position
+    # from being coupled to a particular phrase across runs.
+    rng = np.random.default_rng(seed)
     for i in range(0, len(examples), bsz):
         exs = examples[i : i + bsz]
-        prompts = [build_prompt_text(tok, e, condition, donors[i + j]) for j, e in enumerate(exs)]
+        orders = [rng.permutation(len(LETTERS)).tolist() for _ in exs]
+        prompts = []
+        for j, e in enumerate(exs):
+            permuted = dict(e)
+            permuted["candidates"] = [e["candidates"][k] for k in orders[j]]
+            prompts.append(build_prompt_text(tok, permuted, condition, donors[i + j]))
         enc = tok(prompts, return_tensors="pt", padding=True, add_special_tokens=False).to(device)
         logits = model(**enc).logits[:, -1, :][:, letter_ids]  # left padding -> last position
-        preds += [LETTERS[k] for k in logits.argmax(-1).tolist()]
+        preds += [LETTERS[orders[j][k]] for j, k in enumerate(logits.argmax(-1).tolist())]
     acc = np.array([float(p == e["label"]) for p, e in zip(preds, examples)])
     return {"accuracy": acc}, preds
 
@@ -147,7 +156,7 @@ def main():
                 if t == "A":
                     sc, preds = run_task_a(model, tok, ex, donors[t], cond, args.bsz, args.max_new_tokens, device)
                 else:
-                    sc, preds = run_task_b(model, tok, ex, donors[t], cond, args.bsz, device)
+                    sc, preds = run_task_b(model, tok, ex, donors[t], cond, args.bsz, device, args.seed)
                 entry = {"n": len(ex), **summarize(sc, rng, args.n_boot)}
                 hk = "normalized_match" if t == "A" else "accuracy"
                 entry["per_text"] = {

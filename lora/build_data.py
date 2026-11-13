@@ -139,7 +139,7 @@ def prepare_text(name, txt_path, json_path, args):
 # ----------------------------------------------------------------------------
 # split by text
 # ----------------------------------------------------------------------------
-def assign_splits(books, fracs, seed, split_file):
+def assign_splits(books, fracs, seed, split_file, gold_prep=None):
     """Return {split: [book names]}. Whole texts only."""
     names = [b["name"] for b in books]
     if split_file:
@@ -154,6 +154,33 @@ def assign_splits(books, fracs, seed, split_file):
         if len(listed) != len(set(listed)):
             raise SystemExit("split_file lists a text more than once")
         return {s: list(spec.get(s, [])) for s in SPLITS}
+
+    if gold_prep:
+        gold = json.loads(Path(gold_prep).read_text(encoding="utf-8"))["excerpts"]
+        names = {b["name"] for b in books}
+        aliases = {}
+        for name in names:
+            matches = [candidate for candidate in gold if candidate == name or
+                       candidate.startswith(name) or name.startswith(candidate)]
+            if len(matches) == 1:
+                aliases[name] = matches[0]
+        missing = sorted(names - set(aliases))
+        if missing:
+            raise SystemExit(f"gold_prep has no split assignment for texts: {missing}")
+        test = sorted(n for n in names if gold[aliases[n]].get("split") == "test")
+        train_pool = sorted(n for n in names if gold[aliases[n]].get("split") == "train")
+        if not train_pool or not test:
+            raise SystemExit("gold_prep must assign texts to both train and test")
+        by_name = {b["name"]: b for b in books}
+        rng = random.Random(seed)
+        rng.shuffle(train_pool)
+        target_val = sum(len(by_name[n]["events"]) for n in train_pool) * fracs[1] / (fracs[0] + fracs[1])
+        val, val_count = [], 0
+        while train_pool and (val_count < target_val or not val):
+            name = train_pool.pop()
+            val.append(name)
+            val_count += len(by_name[name]["events"])
+        return {"train": sorted(train_pool), "val": sorted(val), "test": test}
 
     if len(books) < 3:
         raise SystemExit(f"need >= 3 texts to split by text, found {len(books)}")
@@ -268,6 +295,8 @@ def main():
     ap.add_argument("--end_key", default="end_ind")
     ap.add_argument("--split", type=float, nargs=3, default=[0.70, 0.15, 0.15], help="target fractions of EVENTS, assigned by whole text")
     ap.add_argument("--split_file", default=None, help='optional JSON {"train":[names],"val":[...],"test":[...]} to fix the assignment')
+    ap.add_argument("--gold_prep", default=None,
+                    help="optional gold_ner_prep.json; preserves its golden test books and carves validation from its train books")
     ap.add_argument("--min_events_per_text", type=int, default=8)
     ap.add_argument("--a_window", type=int, default=600, help="chars on each side (Task A)")
     ap.add_argument("--b_window", type=int, default=1200, help="chars of preceding narrative (Task B)")
@@ -277,7 +306,7 @@ def main():
     ap.add_argument("--distractors", choices=["text", "split"], default="text",
                     help="'text': prefer distractors from the same text; 'split': pool over all texts in the split")
     ap.add_argument("--strict", action="store_true", help="abort unless every offset is exact")
-    ap.add_argument("--seed", type=int, default=0)
+    ap.add_argument("--seed", type=int, default=42)
     args = ap.parse_args()
 
     text_dir = Path(args.text_dir)
@@ -328,7 +357,7 @@ def main():
         print(f"WARNING: dropped texts with < {args.min_events_per_text} usable events: {dropped_small}")
 
     # ---- 2. split by text ------------------------------------------------
-    assignment = assign_splits(books, args.split, args.seed, args.split_file)
+    assignment = assign_splits(books, args.split, args.seed, args.split_file, args.gold_prep)
     by_name = {b["name"]: b for b in books}
 
     # ---- 3. build tasks --------------------------------------------------

@@ -36,6 +36,16 @@ python3 evaluate_spatial_benchmarks.py \
   --pred_out runs/qwen-stepgame/stepgame_test_predictions.jsonl
 ```
 
+The evaluator samples exactly four relation options per item, retains the gold relation, and shuffles their order using `--seed`. The resulting score is conditional on that sampled four-choice set.
+
+To compare how much spatial-relation information is linearly accessible from ordered entity-pair states before and after adaptation, run:
+
+```bash
+python3 probe_spatial.py --model Qwen/Qwen2.5-0.5B-Instruct \
+  --adapter runs/qwen-stepgame/best \
+  --out runs/qwen-stepgame/entity_pair_probe.json
+```
+
 ## Evaluate transfer to literary movement
 
 Use the exact same held-out novels for the base and StepGame-adapted model:

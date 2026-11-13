@@ -15,6 +15,7 @@ Requires the optional `datasets` package in addition to requirements.txt.
 """
 import argparse
 import json
+import random
 import re
 from pathlib import Path
 
@@ -68,6 +69,25 @@ def load_examples(args):
         rows = rows[:args.limit]
     if not rows:
         raise SystemExit("The selected benchmark split is empty")
+    # Keep the benchmark in a consistent four-option format. Retain every gold
+    # relation, sample the remaining options from the example's candidate pool,
+    # and randomize their displayed order deterministically by seed and id.
+    narrowed = []
+    for ex in rows:
+        targets = list(dict.fromkeys(map(normalize_relation, ex["targets"])))
+        if len(targets) > 4:
+            raise SystemExit(f"Example {ex['id']} has more than four gold relations; cannot form a four-choice item")
+        pool = list(dict.fromkeys(map(normalize_relation, ex["choices"])))
+        negatives = [choice for choice in pool if choice not in targets]
+        if len(negatives) < 4 - len(targets):
+            raise SystemExit(f"Example {ex['id']} has too few distractor labels to form four choices")
+        local_rng = random.Random(f"{args.seed}:{ex['id']}")
+        choices = targets + local_rng.sample(negatives, 4 - len(targets))
+        local_rng.shuffle(choices)
+        ex["targets"] = targets
+        ex["choices"] = choices
+        narrowed.append(ex)
+    rows = narrowed
     return rows
 
 
@@ -224,7 +244,7 @@ def main():
         for ex, raw, pred_set in zip(examples, text_predictions, pred_sets):
             pred_rows.append({
                 "model": name, "id": ex["id"], "group": ex["group"],
-                "source": ex.get("source"), "gold": ex["targets"],
+                "source": ex.get("source"), "gold": ex["targets"], "choices": ex["choices"],
                 "pred": sorted(pred_set), "raw_output": raw,
             })
         print(f"[{name:5s}] exact={summary['exact_match_accuracy']:.3f} "
@@ -242,7 +262,7 @@ def main():
     for ex, raw, pred_set in zip(examples, text_predictions, pred_sets):
         pred_rows.append({
             "model": "finetuned", "id": ex["id"], "group": ex["group"],
-            "source": ex.get("source"), "gold": ex["targets"],
+            "source": ex.get("source"), "gold": ex["targets"], "choices": ex["choices"],
             "pred": sorted(pred_set), "raw_output": raw,
         })
     print(f"[finetuned] exact={summary['exact_match_accuracy']:.3f} "
@@ -264,6 +284,8 @@ def main():
             "dataset": "ZhengyanShi/StepGame" if args.benchmark == "stepgame" else "UKPLab/sparp",
             "config": args.config if args.benchmark == "sparp" else None,
             "split": args.split,
+            "choices_per_example": 4,
+            "choice_order_seed": args.seed,
             "model": args.model,
             "adapter": args.adapter,
             "n_examples": len(examples),

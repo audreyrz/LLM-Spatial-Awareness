@@ -14,6 +14,5 @@ __pycache__/
 # Local evaluation outputs and debug dumps
 /lora/*predictions*.jsonl
 **/*results*.json
-/lora/literary_benchmark/*.jsonl
 /lora/laya_debug.json
 /lora/laya_debug.jsonl
