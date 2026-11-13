@@ -57,10 +57,17 @@ def encode_row(tokenizer, ex, max_len):
             "attention_mask": [1] * len(ids)}
 
 
-def batches(data, batch_size, rng):
+def batches(data, batch_size, rng, bucket_multiplier=32):
+    """Shuffle length-similar batches to reduce wasted padding work."""
     order = list(range(len(data)))
     rng.shuffle(order)
-    return [order[i:i + batch_size] for i in range(0, len(order), batch_size)]
+    chunk_size = batch_size * bucket_multiplier
+    out = []
+    for start in range(0, len(order), chunk_size):
+        chunk = sorted(order[start:start + chunk_size], key=lambda i: len(data[i]["input_ids"]))
+        out.extend(chunk[i:i + batch_size] for i in range(0, len(chunk), batch_size))
+    rng.shuffle(out)
+    return out
 
 
 def collate(examples, pad_id, device):
@@ -114,6 +121,7 @@ def main():
     ap.add_argument("--alpha", type=int, default=32)
     ap.add_argument("--dropout", type=float, default=0.05)
     ap.add_argument("--seed", type=int, default=17)
+    ap.add_argument("--max_steps", type=int, default=None, help="stop after this many optimizer updates")
     ap.add_argument("--limit_train", type=int, default=None, help="optional debugging cap")
     ap.add_argument("--limit_val", type=int, default=None, help="optional debugging cap")
     args = ap.parse_args()
@@ -140,7 +148,12 @@ def main():
     if not train or not val: raise SystemExit("Training or validation data is empty")
 
     device, dtype = pick_device_dtype()
-    model = AutoModelForCausalLM.from_pretrained(args.model, torch_dtype=dtype).to(device)
+    if device == "cuda":
+        torch.set_float32_matmul_precision("high")
+    model = AutoModelForCausalLM.from_pretrained(
+        args.model, torch_dtype=dtype, attn_implementation="sdpa"
+    ).to(device)
+    model.config.use_cache = False
     config = LoraConfig(
         r=args.r, lora_alpha=args.alpha, lora_dropout=args.dropout, bias="none",
         task_type="CAUSAL_LM", target_modules=["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
@@ -159,6 +172,7 @@ def main():
         model.train(); optimizer.zero_grad(set_to_none=True)
         rng = random.Random(args.seed + epoch)
         epoch_losses, pending = [], 0
+        stop_training = False
         for indices in batches(train, args.batch_size, rng):
             loss = batch_loss(model, [train[i] for i in indices], tokenizer.pad_token_id, device)
             epoch_losses.append(float(loss.detach()))
@@ -166,6 +180,9 @@ def main():
             if pending == args.grad_accum:
                 torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
                 optimizer.step(); scheduler.step(); optimizer.zero_grad(set_to_none=True); step += 1; pending = 0
+                if args.max_steps and step >= args.max_steps:
+                    stop_training = True
+                    break
         if pending:
             torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
             optimizer.step(); scheduler.step(); optimizer.zero_grad(set_to_none=True); step += 1
@@ -176,6 +193,8 @@ def main():
             best_val = val_loss
             model.save_pretrained(out_dir / "best")
             tokenizer.save_pretrained(out_dir / "best")
+        if stop_training or (args.max_steps and step >= args.max_steps):
+            break
     (out_dir / "train_log.json").write_text(json.dumps({
         "model": args.model, "dataset": args.dataset, "train_split": "train",
         "official_test_used_for_training": False, "n_train": len(train), "n_val": len(val),

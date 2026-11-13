@@ -11,7 +11,17 @@ python3 train_stepgame.py \
   --seed 17
 ```
 
-The best validation-loss adapter is saved to `runs/qwen-stepgame/best`. For a quick pipeline check, pass `--limit_train 128 --limit_val 32 --epochs 1`; those caps are only for debugging, not a research result. Training supports `--batch_size`, `--grad_accum`, `--lr`, `--epochs`, and `--max_len`.
+The best validation-loss adapter is saved to `runs/qwen-stepgame/best`. For a quick pipeline check, pass `--limit_train 128 --limit_val 32 --epochs 1`; those caps are only for debugging, not a research result. Training supports `--batch_size`, `--grad_accum`, `--lr`, `--epochs`, `--max_len`, and `--max_steps`.
+
+## Speed options
+
+The trainer uses SDPA attention, disables the inference KV cache, and groups similarly sized examples into batches to reduce padding. For a faster first full-data run on a GPU, try:
+
+```bash
+python3 train_stepgame.py --epochs 1 --max_len 1024 --batch_size 8 --grad_accum 1
+```
+
+If that runs out of memory, reduce `--batch_size` to 4 or 2 and increase `--grad_accum` to keep a similar effective batch size. Shorter `--max_len` can truncate long contexts and affect results. For a quick runtime estimate, use `--max_steps 100`; that adapter is only a speed check and should not be used for the final transfer comparison. On CPU, Qwen fine-tuning will be slow; a CUDA GPU is strongly preferred.
 
 ## Evaluate the spatial training task
 
